@@ -1,31 +1,38 @@
-<style>
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-  }
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
 
-<div style="width: 100%; height: 100%">
-  <div id="game"></div>
-</div>
+  <body>
+    <div style="width: 100%; height: 100%">
+      <div id="game"></div>
+    </div>
 
-<script type="text/javascript">
-  EJS_player = "#game";
+    <script type="text/javascript">
+      EJS_player = "#game";
 
-  // Can also be fceumm or nestopia
-  EJS_core = "nes";
+      // Can also be fceumm or nestopia
+      EJS_core = "nes";
 
-  // Lightgun
-  EJS_lightgun = false; // can be true or false
+      // Lightgun
+      EJS_lightgun = false; // can be true or false
 
-  // URL to BIOS file
-  EJS_biosUrl = ""; // example: https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
+      // URL to BIOS file
+      EJS_biosUrl = ""; // example: https://dl.dropboxusercontent.com/s/[random-code]/bios.bin
 
-  // URL to Game rom
-  EJS_gameUrl = "./files/teste.n"; // example: https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+      // URL to Game rom
+      EJS_gameUrl = "./files/teste.n"; // example: https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
 
-  // Path to the data directory
-  EJS_pathtodata = "data/";
-</script>
-<script src="data/loader.js"></script>
+      // Path to the data directory
+      EJS_pathtodata = "data/";
+    </script>
+    <script src="data/loader.js"></script>
+  </body>
+</html>

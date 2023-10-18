@@ -20,14 +20,27 @@
   </head>
 
   <body>
-    <iframe
-      id="jsdos"
-      frameborder="0"
-      src="https://dos.zone/player/?bundleUrl=https%3A%2F%2Fnamco.vercel.app%2Finterfaces%2Fpmaker1.jsdos&anonymous=1"
-      allowfullscreen
-    >
-    </iframe>
+    <iframe id="jsdos" frameborder="0" allowfullscreen> </iframe>
     <script>
+      $_GET = [];
+      (function () {
+        corte = window.location.href.toString().indexOf("?");
+        if (corte > 0) {
+          argumento = window.location.href.toString().substring(corte + 1);
+          argumentos = argumento.split("&");
+          for (arg in argumentos) {
+            let argCorte = argumentos[arg].indexOf("=");
+            $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[
+              arg
+            ].substring(argCorte + 1);
+          }
+        }
+      })();
+
+      document.getElementById(
+        "jsdos"
+      ).src = `https://dos.zone/player/?bundleUrl=https%3A%2F%2Fnamco.vercel.app%2Finterfaces%2F${$_GET["rom"]}.jsdos&anonymous=1`;
+
       window.onload = () => {
         document.getElementById("jsdos").focus();
 

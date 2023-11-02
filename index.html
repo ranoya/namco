@@ -21,6 +21,21 @@
     </div>
 
     <script type="text/javascript">
+      $_GET = [];
+      (function () {
+        corte = window.location.href.toString().indexOf("?");
+        if (corte > 0) {
+          argumento = window.location.href.toString().substring(corte + 1);
+          argumentos = argumento.split("&");
+          for (arg in argumentos) {
+            let argCorte = argumentos[arg].indexOf("=");
+            $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[
+              arg
+            ].substring(argCorte + 1);
+          }
+        }
+      })();
+
       EJS_player = "#game";
 
       // Can also be fceumm or nestopia
@@ -35,6 +50,14 @@
       // URL to Game rom
       EJS_gameUrl = "./files/teste.n";
       // example: https://dl.dropboxusercontent.com/s/[random-code]/mario.nes
+
+      if (
+        typeof $_GET["rom"] != "undefined" &&
+        $_GET["rom"] != null &&
+        $_GET["rom"] != ""
+      ) {
+        EJS_gameUrl = $_GET["rom"];
+      }
 
       // Path to the data directory
       EJS_pathtodata = "data/";

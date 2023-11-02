@@ -41,6 +41,14 @@
       // Can also be fceumm or nestopia
       EJS_core = "nes";
 
+      if (
+        typeof $_GET["core"] != "undefined" &&
+        $_GET["core"] != null &&
+        $_GET["core"] != ""
+      ) {
+        EJS_gameUrl = $_GET["core"];
+      }
+
       // Lightgun
       EJS_lightgun = false; // can be true or false
 

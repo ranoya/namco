@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      #game {
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="width: 100%; height: 100%">
+      <div id="game"></div>
+    </div>
+
+    <script type="text/javascript">
+      /*
+
+      EMULATOR JS
+      https://emulatorjs.org
+
+      */
+
+      $_GET = [];
+      (function () {
+        corte = window.location.href.toString().indexOf("?");
+        if (corte > 0) {
+          argumento = window.location.href.toString().substring(corte + 1);
+          argumentos = argumento.split("&");
+          for (arg in argumentos) {
+            let argCorte = argumentos[arg].indexOf("=");
+            $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[
+              arg
+            ].substring(argCorte + 1);
+          }
+        }
+      })();
+
+      EJS_player = "#game";
+      EJS_core = "arcade";
+      EJS_color = "#0064ff";
+      EJS_pathtodata =
+        "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/";
+
+      if (
+        typeof $_GET["core"] != "undefined" &&
+        $_GET["core"] != null &&
+        $_GET["core"] != ""
+      ) {
+        EJS_core = $_GET["core"];
+      }
+
+      EJS_startOnLoaded = true;
+
+      // Lightgun
+      EJS_lightgun = false; // can be true or false
+
+      EJS_gameUrl = "../files/k.zip";
+
+      if (
+        typeof $_GET["rom"] != "undefined" &&
+        $_GET["rom"] != null &&
+        $_GET["rom"] != ""
+      ) {
+        EJS_gameUrl = $_GET["rom"];
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/loader.js"></script>
+  </body>
+</html>

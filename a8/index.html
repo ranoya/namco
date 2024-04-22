@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Atari Online</title>
+    <style>
+      #canvas {
+        width: auto !important;
+        aspect-ratio: 4 / 3 !important;
+        height: 95vh !important;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      style="width: 100%; height: 100%; display: block; margin: 0 auto"
+    ></canvas>
+
+    <script
+      type="text/javascript"
+      src="https://eahumada.github.io/AtariOnline/js/emularity/es6-promise.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://eahumada.github.io/AtariOnline/js/emularity/browserfs.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://eahumada.github.io/AtariOnline/js/emularity/loader.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://eahumada.github.io/AtariOnline/js/atarionline.js"
+    ></script>
+    <script type="text/javascript">
+      // Load all components
+      var cart = get_url_param("cart");
+      var disk = get_url_param("disk");
+
+      if (!cart) {
+        cart = "";
+      }
+
+      if (!disk) {
+        disk = "";
+      }
+
+      if (cart === "" && disk === "") {
+        cart = "joust.car";
+      }
+
+      if (cart != "") {
+        mountCart = JSMESSLoader.mountFile(
+          cart,
+          JSMESSLoader.fetchFile("Cartridge", cart)
+        );
+        cartPeripheral = JSMESSLoader.peripheral("cart1", cart);
+      } else {
+        mountCart = undefined;
+        cartPeripheral = undefined;
+      }
+
+      if (disk != "") {
+        mountDisk = JSMESSLoader.mountFile(
+          "disk1.atr",
+          JSMESSLoader.fetchFile("Disk", disk)
+        );
+        diskPeripheral = JSMESSLoader.peripheral("flop1", "disk1.atr");
+      } else {
+        mountDisk = undefined;
+        diskPeripheral = undefined;
+      }
+      if (disk != "" && cart != "") {
+        var emulator = new Emulator(
+          document.querySelector("#canvas"),
+          null,
+          new JSMESSLoader(
+            JSMESSLoader.driver("a800xl"),
+            JSMESSLoader.nativeResolution(672, 450),
+            JSMESSLoader.scale(1.2),
+            JSMESSLoader.emulatorJS(
+              "https://eahumada.github.io/AtariOnline/js/emulators/mame/mamea800xl.js"
+            ),
+            JSMESSLoader.emulatorWASM(
+              "https://eahumada.github.io/AtariOnline/js/emulators/mame/mamea800xl.wasm"
+            ),
+            JSMESSLoader.mountFile(
+              "a800xl.zip",
+              JSMESSLoader.fetchFile(
+                "BIOS",
+                "https://eahumada.github.io/AtariOnline/emulators/mame/a800xl-bd.zip"
+              )
+            ),
+            JSMESSLoader.mountFile(
+              "a800xl.cfg",
+              JSMESSLoader.fetchFile(
+                "Config",
+                "https://eahumada.github.io/AtariOnline/emulators/mame/a800xl.cfg"
+              )
+            ),
+            mountCart,
+            cartPeripheral,
+            mountDisk,
+            diskPeripheral,
+            JSMESSLoader.extraArgs([""])
+          )
+        );
+      } else if (cart != "") {
+        var emulator = new Emulator(
+          document.querySelector("#canvas"),
+          null,
+          new JSMESSLoader(
+            JSMESSLoader.driver("a800xl"),
+            JSMESSLoader.nativeResolution(672, 450),
+            JSMESSLoader.scale(1.2),
+            JSMESSLoader.emulatorJS(
+              "https://eahumada.github.io/AtariOnline/js/emulators/mame/mamea800xl.js"
+            ),
+            JSMESSLoader.emulatorWASM(
+              "https://eahumada.github.io/AtariOnline/js/emulators/mame/mamea800xl.wasm"
+            ),
+            JSMESSLoader.mountFile(
+              "a800xl.zip",
+              JSMESSLoader.fetchFile(
+                "BIOS",
+                "https://eahumada.github.io/AtariOnline/emulators/mame/a800xl-bd.zip"
+              )
+            ),
+            JSMESSLoader.mountFile(
+              "a800xl.cfg",
+              JSMESSLoader.fetchFile(
+                "Config",
+                "https://eahumada.github.io/AtariOnline/emulators/mame/a800xl.cfg"
+              )
+            ),
+            mountCart,
+            cartPeripheral,
+            JSMESSLoader.extraArgs([""])
+          )
+        );
+      } else {
+        var emulator = new Emulator(
+          document.querySelector("#canvas"),
+          null,
+          new JSMESSLoader(
+            JSMESSLoader.driver("a800xl"),
+            JSMESSLoader.nativeResolution(672, 450),
+            JSMESSLoader.scale(1.2),
+            JSMESSLoader.emulatorJS(
+              "https://eahumada.github.io/AtariOnline/js/emulators/mame/mamea800xl.js"
+            ),
+            JSMESSLoader.emulatorWASM(
+              "https://eahumada.github.io/AtariOnline/js/emulators/mame/mamea800xl.wasm"
+            ),
+            JSMESSLoader.mountFile(
+              "a800xl.zip",
+              JSMESSLoader.fetchFile(
+                "BIOS",
+                "https://eahumada.github.io/AtariOnline/emulators/mame/a800xl-bd.zip"
+              )
+            ),
+            JSMESSLoader.mountFile(
+              "a800xl.cfg",
+              JSMESSLoader.fetchFile(
+                "Config",
+                "https://eahumada.github.io/AtariOnline/emulators/mame/a800xl.cfg"
+              )
+            ),
+            mountDisk,
+            diskPeripheral,
+            JSMESSLoader.extraArgs([""])
+          )
+        );
+      }
+
+      //  emulator.mute();
+
+      emulator.start({ waitAfterDownloading: true });
+    </script>
+  </body>
+</html>

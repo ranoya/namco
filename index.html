@@ -76,6 +76,16 @@
         EJS_gameUrl = $_GET["rom"];
       }
 
+      EJS_gameParentUrl = "";
+
+      if (
+        typeof $_GET["parent"] != "undefined" &&
+        $_GET["parent"] != null &&
+        $_GET["parent"] != ""
+      ) {
+        EJS_gameParentUrl = $_GET["parent"];
+      }
+
       // Path to the data directory
       EJS_pathtodata = "data/";
     </script>

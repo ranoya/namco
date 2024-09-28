@@ -1,56 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <style>
-      html,
-      body,
-      #jsdos {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        border: none;
-        overflow: hidden;
-      }
-    </style>
+    <!-- js-dos style sheet -->
+    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css" />
+
+    <!-- js-dos -->
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
   </head>
 
   <body>
-    <iframe id="jsdos" frameborder="0" allowfullscreen> </iframe>
+    <div id="dos"></div>
+
     <script>
-      $_GET = [];
-      (function () {
-        corte = window.location.href.toString().indexOf("?");
-        if (corte > 0) {
-          argumento = window.location.href.toString().substring(corte + 1);
-          argumentos = argumento.split("&");
-          for (arg in argumentos) {
-            let argCorte = argumentos[arg].indexOf("=");
-            $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[
-              arg
-            ].substring(argCorte + 1);
-          }
-        }
-      })();
-
-      document.getElementById(
-        "jsdos"
-      ).src = `https://dos.zone/player/?bundleUrl=https%3A%2F%2Fnamco.vercel.app%2Finterfaces%2F${$_GET["rom"]}.jsdos&anonymous=1`;
-
-      window.onload = () => {
-        document.getElementById("jsdos").focus();
-
-        window.addEventListener("message", (e) => {
-          if (e.data.message === "dz-player-exit") {
-            document.getElementById("jsdos").style.display = "none";
-            alert("js-dos exited");
-          }
-        });
-      };
+      Dos(document.getElementById("dos"), {
+        url: "https://cdn.dos.zone/original/2X/9/9ed7eb9c2c441f56656692ed4dc7ab28f58503ce.jsdos",
+      });
     </script>
   </body>
 </html>

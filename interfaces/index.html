@@ -45,9 +45,25 @@
         }
       })();
 
-      Dos(document.getElementById("dos"), {
-        url: "https://namco.vercel.app/interfaces/" + $_GET["rom"] + ".jsdos",
-      });
+      if (
+        typeof $_GET["rom"] != "undefined" &&
+        $_GET["rom"] != null &&
+        $_GET["rom"] != ""
+      ) {
+        Dos(document.getElementById("dos"), {
+          url: "https://namco.vercel.app/interfaces/" + $_GET["rom"] + ".jsdos",
+        });
+      }
+
+      if (
+        typeof $_GET["doszone"] != "undefined" &&
+        $_GET["doszone"] != null &&
+        $_GET["doszone"] != ""
+      ) {
+        Dos(document.getElementById("dos"), {
+          url: $_GET["doszone"],
+        });
+      }
     </script>
   </body>
 </html>

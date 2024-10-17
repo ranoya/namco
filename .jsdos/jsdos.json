@@ -92,7 +92,7 @@
       "script": {
         "name": "lines",
         "description": "Use \\n to separate lines",
-        "value": "cd NIGHT\nIML\n",
+        "value": "cd DYNAMIX\nHOC\n",
         "allowedValues": []
       }
     }

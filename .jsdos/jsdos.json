@@ -92,7 +92,7 @@
       "script": {
         "name": "lines",
         "description": "Use \\n to separate lines",
-        "value": "cd mstreets\nms\n",
+        "value": "cd Populous\ncd POPULOUS\nPOPULOUS\n",
         "allowedValues": []
       }
     }

@@ -92,7 +92,7 @@
       "script": {
         "name": "lines",
         "description": "Use \\n to separate lines",
-        "value": "cd Populous\ncd POPULOUS\nPOPULOUS\n",
+        "value": "cd Dynamix\ndragon\n",
         "allowedValues": []
       }
     }

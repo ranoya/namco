@@ -92,7 +92,7 @@
       "script": {
         "name": "lines",
         "description": "Use \\n to separate lines",
-        "value": "cd IGNITION\nIGN_DOS.BAT\n",
+        "value": "cd quake\nquake exec autoexec.cfg\n",
         "allowedValues": []
       }
     }

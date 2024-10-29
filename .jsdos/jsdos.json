@@ -92,7 +92,7 @@
       "script": {
         "name": "lines",
         "description": "Use \\n to separate lines",
-        "value": "cd SQ5\nsierra\n",
+        "value": "cd CAESAR2\nC2.BAT\n",
         "allowedValues": []
       }
     }

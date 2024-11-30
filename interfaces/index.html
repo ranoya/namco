@@ -52,6 +52,8 @@
       ) {
         Dos(document.getElementById("dos"), {
           url: "https://namco.vercel.app/interfaces/" + $_GET["rom"] + ".jsdos",
+          autoStart: true,
+          mouseSensitivity: 0.3,
         });
       }
 
@@ -62,6 +64,8 @@
       ) {
         Dos(document.getElementById("dos"), {
           url: $_GET["doszone"],
+          autoStart: true,
+          mouseSensitivity: 0.3,
         });
       }
     </script>

@@ -53,7 +53,9 @@
         Dos(document.getElementById("dos"), {
           url: "https://namco.vercel.app/interfaces/" + $_GET["rom"] + ".jsdos",
           autoStart: true,
-          mouseSensitivity: 0.3,
+          mouseSensitivity: 0.1,
+          mouseCapture: true,
+          theme: "forest",
         });
       }
 
@@ -65,7 +67,9 @@
         Dos(document.getElementById("dos"), {
           url: $_GET["doszone"],
           autoStart: true,
-          mouseSensitivity: 0.3,
+          mouseSensitivity: 0.1,
+          mouseCapture: true,
+          theme: "forest",
         });
       }
     </script>

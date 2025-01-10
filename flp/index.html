@@ -74,6 +74,14 @@
       ) {
         EJS_gameUrl = "../" + $_GET["rom"];
       }
+
+      if (
+        typeof $_GET["url"] != "undefined" &&
+        $_GET["url"] != null &&
+        $_GET["url"] != ""
+      ) {
+        EJS_gameUrl = $_GET["url"];
+      }
     </script>
     <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
   </body>

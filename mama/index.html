@@ -63,7 +63,7 @@
           JSMAMELoader.emulatorJS("mameexidy.js"),
           JSMAMELoader.mountFile(
             `${$_GET["rom"]}`,
-            JSMAMELoader.fetchFile("Game File", `files/${$_GET["rom"]}`)
+            JSMAMELoader.fetchFile("Game File", `../files/${$_GET["rom"]}`)
           )
         )
       );

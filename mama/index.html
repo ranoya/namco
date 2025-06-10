@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Atari Online</title>
+    <style>
+      #canvas {
+        width: auto !important;
+        aspect-ratio: 4 / 3 !important;
+        height: 95vh !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      
+      https://eahumada.github.io/AtariOnline/games/games-mame.html?cart=joust.car 
+    
+      Controls: F1 = HELP, F2 = START, F3 = SELECT, F4 = OPTION
+      KEY ARROWS = joystick, LEFT ALT = Fire.
+    
+    -->
+    <canvas
+      id="canvas"
+      style="width: 100%; height: 100%; display: block; margin: 0 auto"
+    ></canvas>
+
+    <script
+      type="text/javascript"
+      src="https://eahumada.github.io/AtariOnline/js/emularity/es6-promise.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://eahumada.github.io/AtariOnline/js/emularity/browserfs.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://eahumada.github.io/AtariOnline/js/emularity/loader.js"
+    ></script>
+
+    <script type="text/javascript">
+      $_GET = [];
+      (function () {
+        corte = window.location.href.toString().indexOf("?");
+        if (corte > 0) {
+          argumento = window.location.href.toString().substring(corte + 1);
+          argumentos = argumento.split("&");
+          for (arg in argumentos) {
+            let argCorte = argumentos[arg].indexOf("=");
+            $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[
+              arg
+            ].substring(argCorte + 1);
+          }
+        }
+      })();
+
+      var emulator = new Emulator(
+        document.querySelector("#canvas"),
+        null,
+        new JSMAMELoader(
+          JSMAMELoader.driver("targ"),
+          JSMAMELoader.nativeResolution(256, 256),
+          JSMAMELoader.scale(3),
+          JSMAMELoader.emulatorJS("mameexidy.js"),
+          JSMAMELoader.mountFile(
+            `${$_GET["rom"]}`,
+            JSMAMELoader.fetchFile("Game File", `files/${$_GET["rom"]}`)
+          )
+        )
+      );
+      emulator.start({ waitAfterDownloading: true });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      #ruffle-player,
+      #container {
+        width: 100vw !important;
+        height: 100dvh !important;
+        overflow: hidden !important;
+      }
+
+      ruffle-player {
+        width: 100vw !important;
+        height: 100dvh !important;
+      }
+    </style>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </head>
+  <body>
+    <div id="ruffle-player" style="width: 100vw; height: 100dvh"></div>
+  </body>
+
+  <script>
+    $_GET = [];
+    (function () {
+      corte = window.location.href.toString().indexOf("?");
+      if (corte > 0) {
+        argumento = window.location.href.toString().substring(corte + 1);
+        argumentos = argumento.split("&");
+        for (arg in argumentos) {
+          let argCorte = argumentos[arg].indexOf("=");
+          $_GET[argumentos[arg].substring(0, argCorte)] = argumentos[
+            arg
+          ].substring(argCorte + 1);
+        }
+      }
+    })();
+
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+      // Optional: Configure Ruffle settings here (e.g., autoplay, unmuteOverlay)
+      autoplay: "on",
+      unmuteOverlay: "hidden",
+    };
+
+    // Wait for Ruffle to be ready
+    window.addEventListener("load", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      const container = document.getElementById("ruffle-player");
+      container.appendChild(player);
+
+      let carrega = "eye4u_interface.swf";
+
+      if (
+        typeof $_GET["file"] != "undefined" &&
+        $_GET["file"] != null &&
+        $_GET["file"] != ""
+      ) {
+        carrega = decodeURI($_GET["file"]);
+      }
+
+      // Load the SWF file
+      player.load(carrega);
+    });
+  </script>
+</html>

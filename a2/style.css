@@ -1,0 +1,22 @@
+#monitor {
+  background: url("visuals/screen.jpg") no-repeat;
+  width: 1400;
+  height: 1024;
+}
+
+#glare {
+  position: absolute;
+  top: 67px;
+  left: 8px;
+  background: url("visuals/glare.png") no-repeat;
+  width: 1400;
+  height: 1024;
+  z-index: 1;
+}
+
+#screen,
+#glscreen {
+  position: absolute;
+  left: 231px;
+  top: 285px;
+}

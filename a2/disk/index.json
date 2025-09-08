@@ -1,0 +1,1134 @@
+{
+  "status": "ok",
+  "disks": [
+    { "url": "DOS33SystemMaster1983.dsk", "name": "DOS 3.3 Master" },
+    { "url": "Loderunner.dsk", "name": "Lode Runner" },
+    { "url": "007_view_to_kill.dsk", "name": "007_view_to_kill" },
+    { "url": "ABM.dsk", "name": "ABM" },
+    { "url": "ACS1.do", "name": "ACS1.do" },
+    { "url": "ACS2.do", "name": "ACS2.do" },
+    { "url": "ACS3.do", "name": "ACS3.do" },
+    { "url": "ACS4.do", "name": "ACS4.do" },
+    { "url": "ACS5.do", "name": "ACS5.do" },
+    { "url": "ACS6.do", "name": "ACS6.do" },
+    { "url": "AE1.dsk", "name": "AE1" },
+    { "url": "AE2.dsk", "name": "AE2" },
+    { "url": "Ae1.dsk", "name": "Ae1" },
+    { "url": "Ae2.dsk", "name": "Ae2" },
+    { "url": "AirHeart.dsk", "name": "AirHeart" },
+    { "url": "Airheart.dsk", "name": "Airheart" },
+    { "url": "Alien+.dsk", "name": "Alien+" },
+    { "url": "AplPanic.do", "name": "AplPanic.do" },
+    { "url": "Apple_Panic_+.bin", "name": "Apple_Panic_+.bin" },
+    { "url": "Arcade2.dsk", "name": "Arcade2" },
+    { "url": "Arcade4.dsk", "name": "Arcade4" },
+    { "url": "ArcadeBootCamp.dsk", "name": "ArcadeBootCamp" },
+    { "url": "ArticFox.do", "name": "ArticFox.do" },
+    { "url": "Asteroid.dsk", "name": "Asteroid" },
+    { "url": "Asteroids_NM_H5.dsk", "name": "Asteroids_NM_H5" },
+    { "url": "Aztec.do", "name": "Aztec.do" },
+    { "url": "Aztec.dsk", "name": "Aztec" },
+    { "url": "BC_Quest+.dsk", "name": "BC_Quest+" },
+    { "url": "Ball_Blazer.dsk", "name": "Ball_Blazer" },
+    { "url": "Bandits.dsk", "name": "Bandits" },
+    { "url": "BeachHeadII.dsk", "name": "BeachHeadII" },
+    { "url": "BeachLanding.dsk", "name": "BeachLanding" },
+    { "url": "Beer_Run.dsk", "name": "Beer_Run" },
+    { "url": "BelowTheRoot1.dsk", "name": "BelowTheRoot1" },
+    { "url": "BelowTheRoot2.dsk", "name": "BelowTheRoot2" },
+    { "url": "Berzap.dsk", "name": "Berzap" },
+    { "url": "Beyond_Castle_Wolf.dsk", "name": "Beyond_Castle_Wolf" },
+    { "url": "Beyond_Floppy.dsk", "name": "Beyond_Floppy" },
+    { "url": "Bilestod.do", "name": "Bilestod.do" },
+    { "url": "Bilestod.dsk", "name": "Bilestod" },
+    { "url": "Black_Magic.dsk", "name": "Black_Magic" },
+    { "url": "BladeOfBlackpoole1.dsk", "name": "BladeOfBlackpoole1" },
+    { "url": "BladeOfBlackpoole2.dsk", "name": "BladeOfBlackpoole2" },
+    { "url": "Bolo.dsk", "name": "Bolo" },
+    { "url": "Boulder2.dsk", "name": "Boulder2" },
+    { "url": "Bouncing.dsk", "name": "Bouncing" },
+    { "url": "Breakout.dsk", "name": "Breakout" },
+    { "url": "BruceLee.po", "name": "BruceLee.po" },
+    { "url": "Bruce_Lee.dsk", "name": "Bruce_Lee" },
+    { "url": "Buck_Rogers.dsk", "name": "Buck_Rogers" },
+    { "url": "BugAttck.dsk", "name": "BugAttck" },
+    { "url": "Burgertime.dsk", "name": "Burgertime" },
+    { "url": "CLodeRun.bin", "name": "CLodeRun.bin" },
+    { "url": "Carnival.dsk", "name": "Carnival" },
+    { "url": "CavernsOfCallisto.dsk", "name": "CavernsOfCallisto" },
+    { "url": "Champ_Loderunner.dsk", "name": "Champ_Loderunner" },
+    { "url": "ChopLift.do", "name": "ChopLift.do" },
+    { "url": "Choplifter+.dsk", "name": "Choplifter+" },
+    { "url": "Chrono_Warrior", "name": "Chrono_Warrior" },
+    { "url": "Cider.dsk", "name": "Cider" },
+    { "url": "CnbBlitz.dsk", "name": "CnbBlitz" },
+    { "url": "CngoBngo.do", "name": "CngoBngo.do" },
+    { "url": "Conan1.dsk", "name": "Conan1" },
+    { "url": "Conan2.dsk", "name": "Conan2" },
+    { "url": "Congo_Bongo.dsk", "name": "Congo_Bongo" },
+    { "url": "CrisisMo.dsk", "name": "CrisisMo" },
+    { "url": "Crisis_Mountain.dsk", "name": "Crisis_Mountain" },
+    { "url": "Crossfire.dsk", "name": "Crossfire" },
+    { "url": "CryptOfMedea.dsk", "name": "CryptOfMedea" },
+    { "url": "Crystal.dsk", "name": "Crystal" },
+    {
+      "url": "CyberStrike_Dogfight_Twerps_SpaceEggs.dsk",
+      "name": "CyberStrike_Dogfight_Twerps_SpaceEggs"
+    },
+    { "url": "DallasQuest1.dsk", "name": "DallasQuest1" },
+    { "url": "DallasQuest2.dsk", "name": "DallasQuest2" },
+    { "url": "Defender.dsk", "name": "Defender" },
+    { "url": "Defendr1.dsk", "name": "Defendr1" },
+    { "url": "Defendr2.dsk", "name": "Defendr2" },
+    { "url": "DiamondMine+.dsk", "name": "DiamondMine+" },
+    { "url": "DigDug.dsk", "name": "DigDug" },
+    { "url": "DigEm.dsk", "name": "DigEm" },
+    { "url": "DinoEggs.po", "name": "DinoEggs.po" },
+    { "url": "Dino_Eggs.dsk", "name": "Dino_Eggs" },
+    { "url": "DogFight.dsk", "name": "DogFight" },
+    { "url": "Donkey.dsk", "name": "Donkey" },
+    { "url": "Donkey_Kong.dsk", "name": "Donkey_Kong" },
+    { "url": "Drol.do", "name": "Drol.do" },
+    { "url": "Drol.dsk", "name": "Drol" },
+    { "url": "DthSword.do", "name": "DthSword.do" },
+    { "url": "Dung.dsk", "name": "Dung" },
+    { "url": "Evolution.dsk", "name": "Evolution" },
+    { "url": "Exterminator+.dsk", "name": "Exterminator+" },
+    { "url": "Falcons+.dsk", "name": "Falcons+" },
+    { "url": "Falcons.dsk", "name": "Falcons" },
+    { "url": "Floppy.dsk", "name": "Floppy" },
+    { "url": "flapple140.po", "name": "Flapple" },
+    { "url": "FreeFall.dsk", "name": "FreeFall" },
+    { "url": "Frogger1.dsk", "name": "Frogger1" },
+    { "url": "Frogger2.dsk", "name": "Frogger2" },
+    { "url": "Galaxian.dsk", "name": "Galaxian" },
+    { "url": "Galaxy.do", "name": "Galaxy.do" },
+    { "url": "Gamma_Goblins+.dsk", "name": "Gamma_Goblins+" },
+    { "url": "Ghostbusters", "name": "Ghostbusters" },
+    { "url": "glados33.dsk", "name": "Glados" },
+    { "url": "Gobbler.dsk", "name": "Gobbler" },
+    { "url": "Goonies.dsk", "name": "Goonies" },
+    { "url": "Gorgon.dsk", "name": "Gorgon" },
+    { "url": "Gremlins.dsk", "name": "Gremlins" },
+    { "url": "Hadron.dsk", "name": "Hadron" },
+    { "url": "HardHat.do", "name": "HardHat.do" },
+    { "url": "Hard_Hat_Mack+.dsk", "name": "Hard_Hat_Mack+" },
+    { "url": "Heist.bin", "name": "Heist.bin" },
+    { "url": "Heist.dsk", "name": "Heist" },
+    { "url": "Hero_Pitfall.dsk", "name": "Hero_Pitfall" },
+    { "url": "High_Rise.dsk", "name": "High_Rise" },
+    { "url": "HumanFly.dsk", "name": "HumanFly" },
+    { "url": "Infil.do", "name": "Infil.do" },
+    { "url": "Invader1.dsk", "name": "Invader1" },
+    { "url": "Invader2.dsk", "name": "Invader2" },
+    { "url": "Jawbreak.dsk", "name": "Jawbreak" },
+    { "url": "JetPack.dsk", "name": "JetPack" },
+    { "url": "Joust.dsk", "name": "Joust" },
+    { "url": "Jumpman_1.dsk", "name": "Jumpman_1" },
+    { "url": "Jumpman_2.dsk", "name": "Jumpman_2" },
+    { "url": "Jungle.do", "name": "Jungle.do" },
+    { "url": "Jungle.dsk", "name": "Jungle" },
+    { "url": "Karateka.do", "name": "Karateka.do" },
+    { "url": "Kid_Nikki_1_of_2.dsk", "name": "Kid_Nikki_1_of_2" },
+    { "url": "Kid_Nikki_2_of_2.dsk", "name": "Kid_Nikki_2_of_2" },
+    { "url": "KlanCookout+.dsk", "name": "KlanCookout+" },
+    { "url": "Lady_Tut.dsk", "name": "Lady_Tut" },
+    { "url": "Load_Runner.dsk", "name": "Load_Runner" },
+    { "url": "LockNChase+.dsk", "name": "LockNChase+" },
+    { "url": "LodeRun1.po", "name": "LodeRun1.po" },
+    { "url": "LodeRun2.po", "name": "LodeRun2.po" },
+    { "url": "Loderunner.dsk", "name": "Loderunner" },
+    { "url": "Marauder.dsk", "name": "Marauder" },
+    { "url": "MarbleMadness-1.dsk", "name": "MarbleMadness-1" },
+    { "url": "MarbleMadness-2.dsk", "name": "MarbleMadness-2" },
+    { "url": "Mario.dsk", "name": "Mario" },
+    {
+      "url": "Master_Lamps_&_Super_Huey.dsk",
+      "name": "Master_Lamps_&_Super_Huey"
+    },
+    { "url": "Microwav.do", "name": "Microwav.do" },
+    { "url": "Microwav.dsk", "name": "Microwav" },
+    { "url": "Miner1.bin", "name": "Miner1.bin" },
+    { "url": "Miner2.bin", "name": "Miner2.bin" },
+    { "url": "Miner_2049er.dsk", "name": "Miner_2049er" },
+    { "url": "Miner_2049er_II.dsk", "name": "Miner_2049er_II" },
+    { "url": "Minotaur.dsk", "name": "Minotaur" },
+    { "url": "Minute_Man.dsk", "name": "Minute_Man" },
+    { "url": "Mission.dsk", "name": "Mission" },
+    { "url": "Moon_Patrol-Dung.dsk", "name": "Moon_Patrol-Dung" },
+    { "url": "Mouseattack+.dsk", "name": "Mouseattack+" },
+    { "url": "MouskAtt.po", "name": "MouskAtt.po" },
+    { "url": "MrDo.bin", "name": "MrDo.bin" },
+    { "url": "MrRobot-1.dsk", "name": "MrRobot-1" },
+    { "url": "MrRobot-2.dsk", "name": "MrRobot-2" },
+    { "url": "Mr_Cool.dsk", "name": "Mr_Cool" },
+    { "url": "Mr_Do.dsk", "name": "Mr_Do" },
+    { "url": "Ms_Pac_Man.dsk", "name": "Ms_Pac_Man" },
+    { "url": "Mspacman.dsk", "name": "Mspacman" },
+    { "url": "Night_Crawler.dsk", "name": "Night_Crawler" },
+    { "url": "Night_Driver+.dsk", "name": "Night_Driver+" },
+    { "url": "Night_Mission.dsk", "name": "Night_Mission" },
+    { "url": "Night_Stalker+.dsk", "name": "Night_Stalker+" },
+    { "url": "Nikki1.dsk", "name": "Nikki1" },
+    { "url": "Nikki2.dsk", "name": "Nikki2" },
+    { "url": "OilsWell.dsk", "name": "OilsWell" },
+    {
+      "url": "Oregon Trail (Disk 1 of 2).bin",
+      "name": "Oregon Trail (Disk 1 of 2)"
+    },
+    {
+      "url": "Oregon Trail (Disk 2 of 2).bin",
+      "name": "Oregon Trail (Disk 2 of 2)"
+    },
+    { "url": "Pac_Man.dsk", "name": "Pac_Man" },
+    { "url": "People_Pong+.dsk", "name": "People_Pong+" },
+    { "url": "Pinball_1.dsk", "name": "Pinball_1" },
+    { "url": "Pinball_2.dsk", "name": "Pinball_2" },
+    { "url": "Pinball_Const_Kit.dsk", "name": "Pinball_Const_Kit" },
+    { "url": "PoPBoot.dsk", "name": "PoPBoot" },
+    { "url": "PoPSideA.dsk", "name": "PoPSideA" },
+    { "url": "PoPSideB.dsk", "name": "PoPSideB" },
+    { "url": "Realm_of_Impossibility.dsk", "name": "Realm_of_Impossibility" },
+    { "url": "RearGuard.dsk", "name": "RearGuard" },
+    { "url": "Repton.do", "name": "Repton.do" },
+    { "url": "Repton.dsk", "name": "Repton" },
+    { "url": "Rescue.do", "name": "Rescue.do" },
+    { "url": "Ribbit.dsk", "name": "Ribbit" },
+
+    { "url": "RO1.0/Ro1v10a.dsk", "name": "Robot Odyssey 1.0 Side 1" },
+    { "url": "RO1.0/Ro1v10b.dsk", "name": "Robot Odyssey 1.0 Side 2" },
+    { "url": "RO1.0/DATAV10.DSK", "name": "Robot Odyssey 1.0 Data Disk" },
+
+    { "url": "RO1.1/Ro1v11b.dsk", "name": "Robot Odyssey 1.1 Side 1" },
+    { "url": "RO1.1/Ro1v11a.dsk", "name": "Robot Odyssey 1.1 Side 2" },
+    { "url": "RO1.1/DATAV11.DSK", "name": "Robot Odyssey 1.1 Data Disk" },
+
+    {
+      "url": "Robot Odyssey I v2.0/ROBOT01.DSK",
+      "name": "Robot Odyssey 2.0 Disk 1"
+    },
+    {
+      "url": "Robot Odyssey I v2.0/ROBOT02.DSK",
+      "name": "Robot Odyssey 2.0 Disk 2"
+    },
+    {
+      "url": "Robot Odyssey I v2.0/Robot03.dsk",
+      "name": "Robot Odyssey 2.0 Disk 3"
+    },
+    {
+      "url": "Robot Odyssey I v2.0/DATAV20.DSK",
+      "name": "Robot Odyssey 2.0 Data Disk"
+    },
+
+    { "url": "Robotron.dsk", "name": "Robotron" },
+    { "url": "Run_For_It.dsk", "name": "Run_For_It" },
+    { "url": "Russki.dsk", "name": "Russki" },
+    { "url": "SZaxxon.do", "name": "SZaxxon.do" },
+    { "url": "Sabotage.do", "name": "Sabotage.do" },
+    { "url": "Sabotage.dsk", "name": "Sabotage" },
+    { "url": "Sammy.do", "name": "Sammy.do" },
+    { "url": "Sammy_Lightfoot.dsk", "name": "Sammy_Lightfoot" },
+    { "url": "SeaDragn.po", "name": "SeaDragn.po" },
+    { "url": "Seadragon.dsk", "name": "Seadragon" },
+    { "url": "Seafox+.dsk", "name": "Seafox+" },
+    { "url": "Shamus.dsk", "name": "Shamus" },
+    { "url": "Shiela.dsk", "name": "Shiela" },
+    { "url": "Short_Circuit.dsk", "name": "Short_Circuit" },
+    { "url": "SnackAtt.dsk", "name": "SnackAtt" },
+    { "url": "Sneakers+.dsk", "name": "Sneakers+" },
+    { "url": "Sneakers.do", "name": "Sneakers.do" },
+    { "url": "Spare_Change.dsk", "name": "Spare_Change" },
+    { "url": "Spindizzy+.dsk", "name": "Spindizzy+" },
+    { "url": "Spy_vs_Spy.dsk", "name": "Spy_vs_Spy" },
+    { "url": "StarBlaz.do", "name": "StarBlaz.do" },
+    { "url": "Star_Blaster+.dsk", "name": "Star_Blaster+" },
+    { "url": "Star_Maze.dsk", "name": "Star_Maze" },
+    { "url": "Star_Mine.dsk", "name": "Star_Mine" },
+    { "url": "Star_Trek.dsk", "name": "Star_Trek" },
+    { "url": "Stellar7.do", "name": "Stellar7.do" },
+    {
+      "url": "StuntCarRacer-AppleII/StuntCarRacer.dsk",
+      "name": "StuntCarRacer-AppleII.dsk"
+    },
+    { "url": "Suicide_Etc.dsk", "name": "Suicide_Etc" },
+    { "url": "Super_Taxman.dsk", "name": "Super_Taxman" },
+    { "url": "Superbunny.dsk", "name": "Superbunny" },
+    { "url": "Swash.po", "name": "Swash.po" },
+    { "url": "Swashbuckler+.dsk", "name": "Swashbuckler+" },
+    { "url": "Swashbuckler.dsk", "name": "Swashbuckler" },
+    { "url": "TaxMan1.dsk", "name": "TaxMan1" },
+    { "url": "TaxMan2.dsk", "name": "TaxMan2" },
+    { "url": "TaxMan3.dsk", "name": "TaxMan3" },
+    { "url": "TaxMan4.dsk", "name": "TaxMan4" },
+    { "url": "Tetris.dsk", "name": "Tetris" },
+    { "url": "TetrisII.dsk", "name": "TetrisII" },
+    { "url": "Threshold.nib", "name": "Threshold.nib" },
+    { "url": "Tranquility_Base+.dsk", "name": "Tranquility_Base+" },
+    { "url": "Trolls_Tribulations.dsk", "name": "Trolls_Tribulations" },
+    { "url": "Tunnels.dsk", "name": "Tunnels" },
+    { "url": "Typhoon.dsk", "name": "Typhoon" },
+    { "url": "Up_N_Down", "name": "Up_N_Down" },
+    { "url": "Wavy_Navy.dsk", "name": "Wavy_Navy" },
+    { "url": "Willy_Byte1.dsk", "name": "Willy_Byte1" },
+    { "url": "Willy_Byte2.dsk", "name": "Willy_Byte2" },
+    { "url": "Zaxxon.po", "name": "Zaxxon.po" },
+    { "url": "Zenith.dsk", "name": "Zenith" },
+    { "url": "Zorro.dsk", "name": "Zorro" },
+    {
+      "url": "adventure/007_view_to_kill.dsk",
+      "name": "adventure/007_view_to_kill"
+    },
+    {
+      "url": "adventure/1_galactic_empire.dsk.gz",
+      "name": "adventure/1_galactic_empire.dsk.gz"
+    },
+    {
+      "url": "adventure/2_galactic_trader.dsk.gz",
+      "name": "adventure/2_galactic_trader.dsk.gz"
+    },
+    {
+      "url": "adventure/3_galactic_revolution.dsk.gz",
+      "name": "adventure/3_galactic_revolution.dsk.gz"
+    },
+    {
+      "url": "adventure/4_tawalas_last_redoubt.dsk.gz",
+      "name": "adventure/4_tawalas_last_redoubt.dsk.gz"
+    },
+    { "url": "adventure/50MISION.GZ", "name": "adventure/50MISION.GZ" },
+    { "url": "adventure/ACS1.do", "name": "adventure/ACS1.do" },
+    { "url": "adventure/ACS2.do", "name": "adventure/ACS2.do" },
+    { "url": "adventure/ACS3.do", "name": "adventure/ACS3.do" },
+    { "url": "adventure/ACS4.do", "name": "adventure/ACS4.do" },
+    { "url": "adventure/ACS5.do", "name": "adventure/ACS5.do" },
+    { "url": "adventure/ACS6.do", "name": "adventure/ACS6.do" },
+    { "url": "adventure/AIRCOMBT.GZ", "name": "adventure/AIRCOMBT.GZ" },
+    { "url": "adventure/ANTIETA1.GZ", "name": "adventure/ANTIETA1.GZ" },
+    { "url": "adventure/ANTIETA2.GZ", "name": "adventure/ANTIETA2.GZ" },
+    { "url": "adventure/ARDENES1.GZ", "name": "adventure/ARDENES1.GZ" },
+    { "url": "adventure/ARDENES2.GZ", "name": "adventure/ARDENES2.GZ" },
+    { "url": "adventure/ATLANTIC.GZ", "name": "adventure/ATLANTIC.GZ" },
+    {
+      "url": "adventure/Accolade_Comics_12345.dsk.zip",
+      "name": "adventure/Accolade_Comics_12345.dsk.zip"
+    },
+    { "url": "adventure/Adept.dsk.gz", "name": "adventure/Adept.dsk.gz" },
+    {
+      "url": "adventure/AdvConstSet1of6.dsk",
+      "name": "adventure/AdvConstSet1of6"
+    },
+    {
+      "url": "adventure/AdvConstSet2of6.dsk",
+      "name": "adventure/AdvConstSet2of6"
+    },
+    {
+      "url": "adventure/AdvConstSet3of6.dsk",
+      "name": "adventure/AdvConstSet3of6"
+    },
+    {
+      "url": "adventure/AdvConstSet4of6.dsk",
+      "name": "adventure/AdvConstSet4of6"
+    },
+    {
+      "url": "adventure/AdvConstSet5of6.dsk",
+      "name": "adventure/AdvConstSet5of6"
+    },
+    {
+      "url": "adventure/AdvConstSet6of6.dsk",
+      "name": "adventure/AdvConstSet6of6"
+    },
+    { "url": "adventure/Archon.dsk.gz", "name": "adventure/Archon.dsk.gz" },
+    { "url": "adventure/BALANCE2.GZ", "name": "adventure/BALANCE2.GZ" },
+    { "url": "adventure/BATALION.GZ", "name": "adventure/BATALION.GZ" },
+    { "url": "adventure/BGROUP_1.GZ", "name": "adventure/BGROUP_1.GZ" },
+    { "url": "adventure/BGROUP_2.GZ", "name": "adventure/BGROUP_2.GZ" },
+    { "url": "adventure/BOMBALEY.GZ", "name": "adventure/BOMBALEY.GZ" },
+    { "url": "adventure/BRIGADE1.GZ", "name": "adventure/BRIGADE1.GZ" },
+    { "url": "adventure/BRIGADE2.GZ", "name": "adventure/BRIGADE2.GZ" },
+    { "url": "adventure/BelowTheRoot1.dsk", "name": "adventure/BelowTheRoot1" },
+    { "url": "adventure/BelowTheRoot2.dsk", "name": "adventure/BelowTheRoot2" },
+    {
+      "url": "adventure/BladeOfBlackpoole1.dsk",
+      "name": "adventure/BladeOfBlackpoole1"
+    },
+    {
+      "url": "adventure/BladeOfBlackpoole2.dsk",
+      "name": "adventure/BladeOfBlackpoole2"
+    },
+    {
+      "url": "adventure/Blitzkrieg.dsk.gz",
+      "name": "adventure/Blitzkrieg.dsk.gz"
+    },
+    {
+      "url": "adventure/Broadsides.dsk.gz",
+      "name": "adventure/Broadsides.dsk.gz"
+    },
+    { "url": "adventure/CBISMARK.GZ", "name": "adventure/CBISMARK.GZ" },
+    { "url": "adventure/COAMBUSH.GZ", "name": "adventure/COAMBUSH.GZ" },
+    { "url": "adventure/COLONIAL.GZ", "name": "adventure/COLONIAL.GZ" },
+    { "url": "adventure/CYTRON.GZ", "name": "adventure/CYTRON.GZ" },
+    { "url": "adventure/Cartels.dsk.gz", "name": "adventure/Cartels.dsk.gz" },
+    {
+      "url": "adventure/Crsh_Crmbl_Chomp.dsk.gz",
+      "name": "adventure/Crsh_Crmbl_Chomp.dsk.gz"
+    },
+    { "url": "adventure/CryptOfMedea.dsk", "name": "adventure/CryptOfMedea" },
+    { "url": "adventure/DallasQuest1.dsk", "name": "adventure/DallasQuest1" },
+    { "url": "adventure/DallasQuest2.dsk", "name": "adventure/DallasQuest2" },
+    { "url": "adventure/Deadline.dsk", "name": "adventure/Deadline" },
+    { "url": "adventure/Dungeon.nib", "name": "adventure/Dungeon.nib" },
+    { "url": "adventure/EAGLES.GZ", "name": "adventure/EAGLES.GZ" },
+    { "url": "adventure/EOS.asm", "name": "adventure/EOS.asm" },
+    {
+      "url": "adventure/EOS_Archive.nib.gz",
+      "name": "adventure/EOS_Archive.nib.gz"
+    },
+    {
+      "url": "adventure/EOS_Game2.nib.gz",
+      "name": "adventure/EOS_Game2.nib.gz"
+    },
+    {
+      "url": "adventure/EOS_Mission.nib.gz",
+      "name": "adventure/EOS_Mission.nib.gz"
+    },
+    { "url": "adventure/EPIDEMIC.GZ", "name": "adventure/EPIDEMIC.GZ" },
+    { "url": "adventure/Ea.house.dsk", "name": "adventure/Ea.house" },
+    { "url": "adventure/Ea.master.dsk", "name": "adventure/Ea.master" },
+    { "url": "adventure/Ea.quest.dsk", "name": "adventure/Ea.quest" },
+    { "url": "adventure/Eamon000.DO", "name": "adventure/Eamon000.DO" },
+    { "url": "adventure/Eamon002.DO", "name": "adventure/Eamon002.DO" },
+    { "url": "adventure/Eamon004.DO", "name": "adventure/Eamon004.DO" },
+    { "url": "adventure/Eamon005.DO", "name": "adventure/Eamon005.DO" },
+    { "url": "adventure/Eamon006.DO", "name": "adventure/Eamon006.DO" },
+    { "url": "adventure/Eamon007.DO", "name": "adventure/Eamon007.DO" },
+    { "url": "adventure/Eamon008.DO", "name": "adventure/Eamon008.DO" },
+    { "url": "adventure/Eamon009.DO", "name": "adventure/Eamon009.DO" },
+    { "url": "adventure/Eamon011.DO", "name": "adventure/Eamon011.DO" },
+    { "url": "adventure/Eamon012.DO", "name": "adventure/Eamon012.DO" },
+    { "url": "adventure/Eamon013.DO", "name": "adventure/Eamon013.DO" },
+    { "url": "adventure/Eamon014.DO", "name": "adventure/Eamon014.DO" },
+    { "url": "adventure/Eamon015.DO", "name": "adventure/Eamon015.DO" },
+    { "url": "adventure/Eamon016.DO", "name": "adventure/Eamon016.DO" },
+    { "url": "adventure/Eamon017.DO", "name": "adventure/Eamon017.DO" },
+    { "url": "adventure/Eamon018.DO", "name": "adventure/Eamon018.DO" },
+    { "url": "adventure/Eamon019.DO", "name": "adventure/Eamon019.DO" },
+    { "url": "adventure/Eamon020.DO", "name": "adventure/Eamon020.DO" },
+    { "url": "adventure/Eamon021.DO", "name": "adventure/Eamon021.DO" },
+    { "url": "adventure/Eamon022.DO", "name": "adventure/Eamon022.DO" },
+    { "url": "adventure/Eamon023.DO", "name": "adventure/Eamon023.DO" },
+    { "url": "adventure/Eamon024.DO", "name": "adventure/Eamon024.DO" },
+    { "url": "adventure/Eamon025.DO", "name": "adventure/Eamon025.DO" },
+    { "url": "adventure/Eamon027.DO", "name": "adventure/Eamon027.DO" },
+    { "url": "adventure/Eamon028.DO", "name": "adventure/Eamon028.DO" },
+    { "url": "adventure/Eamon029.DO", "name": "adventure/Eamon029.DO" },
+    { "url": "adventure/Eamon030.DO", "name": "adventure/Eamon030.DO" },
+    { "url": "adventure/Eamon031.DO", "name": "adventure/Eamon031.DO" },
+    { "url": "adventure/Eamon032.DO", "name": "adventure/Eamon032.DO" },
+    { "url": "adventure/Eamon033.DO", "name": "adventure/Eamon033.DO" },
+    { "url": "adventure/Eamon034.DO", "name": "adventure/Eamon034.DO" },
+    { "url": "adventure/Eamon035.DO", "name": "adventure/Eamon035.DO" },
+    { "url": "adventure/Eamon036.DO", "name": "adventure/Eamon036.DO" },
+    { "url": "adventure/Eamon037.DO", "name": "adventure/Eamon037.DO" },
+    { "url": "adventure/Eamon038.DO", "name": "adventure/Eamon038.DO" },
+    { "url": "adventure/Eamon039.DO", "name": "adventure/Eamon039.DO" },
+    { "url": "adventure/Eamon040.DO", "name": "adventure/Eamon040.DO" },
+    { "url": "adventure/Eamon041.DO", "name": "adventure/Eamon041.DO" },
+    { "url": "adventure/Eamon042.DO", "name": "adventure/Eamon042.DO" },
+    { "url": "adventure/Eamon043.DO", "name": "adventure/Eamon043.DO" },
+    { "url": "adventure/Eamon044.DO", "name": "adventure/Eamon044.DO" },
+    { "url": "adventure/Eamon045.DO", "name": "adventure/Eamon045.DO" },
+    { "url": "adventure/Eamon046.DO", "name": "adventure/Eamon046.DO" },
+    { "url": "adventure/Eamon047.DO", "name": "adventure/Eamon047.DO" },
+    { "url": "adventure/Eamon048.DO", "name": "adventure/Eamon048.DO" },
+    { "url": "adventure/Eamon049.DO", "name": "adventure/Eamon049.DO" },
+    { "url": "adventure/Eamon050.DO", "name": "adventure/Eamon050.DO" },
+    { "url": "adventure/Eamon051.DO", "name": "adventure/Eamon051.DO" },
+    { "url": "adventure/Eamon052.DO", "name": "adventure/Eamon052.DO" },
+    { "url": "adventure/Eamon053.DO", "name": "adventure/Eamon053.DO" },
+    { "url": "adventure/Eamon054.DO", "name": "adventure/Eamon054.DO" },
+    { "url": "adventure/Eamon055.DO", "name": "adventure/Eamon055.DO" },
+    { "url": "adventure/Eamon056.DO", "name": "adventure/Eamon056.DO" },
+    { "url": "adventure/Eamon057.DO", "name": "adventure/Eamon057.DO" },
+    { "url": "adventure/Eamon058.DO", "name": "adventure/Eamon058.DO" },
+    { "url": "adventure/Eamon059.DO", "name": "adventure/Eamon059.DO" },
+    { "url": "adventure/Eamon060.DO", "name": "adventure/Eamon060.DO" },
+    { "url": "adventure/Eamon061.DO", "name": "adventure/Eamon061.DO" },
+    { "url": "adventure/Eamon062.DO", "name": "adventure/Eamon062.DO" },
+    { "url": "adventure/Eamon063.DO", "name": "adventure/Eamon063.DO" },
+    { "url": "adventure/Eamon064.DO", "name": "adventure/Eamon064.DO" },
+    { "url": "adventure/Eamon065.DO", "name": "adventure/Eamon065.DO" },
+    { "url": "adventure/Eamon066.DO", "name": "adventure/Eamon066.DO" },
+    { "url": "adventure/Eamon068.DO", "name": "adventure/Eamon068.DO" },
+    { "url": "adventure/Eamon069.DO", "name": "adventure/Eamon069.DO" },
+    { "url": "adventure/Eamon070.DO", "name": "adventure/Eamon070.DO" },
+    { "url": "adventure/Eamon071.DO", "name": "adventure/Eamon071.DO" },
+    { "url": "adventure/Eamon072.DO", "name": "adventure/Eamon072.DO" },
+    { "url": "adventure/Eamon073.DO", "name": "adventure/Eamon073.DO" },
+    { "url": "adventure/Eamon074.DO", "name": "adventure/Eamon074.DO" },
+    { "url": "adventure/Eamon075.DO", "name": "adventure/Eamon075.DO" },
+    { "url": "adventure/Eamon076.DO", "name": "adventure/Eamon076.DO" },
+    { "url": "adventure/Eamon077.DO", "name": "adventure/Eamon077.DO" },
+    { "url": "adventure/Eamon078.DO", "name": "adventure/Eamon078.DO" },
+    { "url": "adventure/Eamon079.DO", "name": "adventure/Eamon079.DO" },
+    { "url": "adventure/Eamon080.DO", "name": "adventure/Eamon080.DO" },
+    { "url": "adventure/Eamon081.DO", "name": "adventure/Eamon081.DO" },
+    { "url": "adventure/Eamon082.DO", "name": "adventure/Eamon082.DO" },
+    { "url": "adventure/Eamon083.DO", "name": "adventure/Eamon083.DO" },
+    { "url": "adventure/Eamon084.DO", "name": "adventure/Eamon084.DO" },
+    { "url": "adventure/Eamon085.DO", "name": "adventure/Eamon085.DO" },
+    { "url": "adventure/Eamon086.DO", "name": "adventure/Eamon086.DO" },
+    { "url": "adventure/Eamon087.DO", "name": "adventure/Eamon087.DO" },
+    { "url": "adventure/Eamon088.DO", "name": "adventure/Eamon088.DO" },
+    { "url": "adventure/Eamon089.DO", "name": "adventure/Eamon089.DO" },
+    { "url": "adventure/Eamon090.DO", "name": "adventure/Eamon090.DO" },
+    { "url": "adventure/Eamon091.DO", "name": "adventure/Eamon091.DO" },
+    { "url": "adventure/Eamon092.DO", "name": "adventure/Eamon092.DO" },
+    { "url": "adventure/Eamon093.DO", "name": "adventure/Eamon093.DO" },
+    { "url": "adventure/Eamon094.DO", "name": "adventure/Eamon094.DO" },
+    { "url": "adventure/Eamon095.DO", "name": "adventure/Eamon095.DO" },
+    { "url": "adventure/Eamon096.DO", "name": "adventure/Eamon096.DO" },
+    { "url": "adventure/Eamon097.DO", "name": "adventure/Eamon097.DO" },
+    { "url": "adventure/Eamon098.DO", "name": "adventure/Eamon098.DO" },
+    { "url": "adventure/Eamon099.DO", "name": "adventure/Eamon099.DO" },
+    { "url": "adventure/Eamon101.DO", "name": "adventure/Eamon101.DO" },
+    { "url": "adventure/Eamon102.DO", "name": "adventure/Eamon102.DO" },
+    { "url": "adventure/Eamon103.DO", "name": "adventure/Eamon103.DO" },
+    { "url": "adventure/Eamon104.DO", "name": "adventure/Eamon104.DO" },
+    { "url": "adventure/Eamon105.DO", "name": "adventure/Eamon105.DO" },
+    { "url": "adventure/Eamon106.DO", "name": "adventure/Eamon106.DO" },
+    { "url": "adventure/Eamon107.DO", "name": "adventure/Eamon107.DO" },
+    { "url": "adventure/Eamon108.DO", "name": "adventure/Eamon108.DO" },
+    { "url": "adventure/Eamon110.DO", "name": "adventure/Eamon110.DO" },
+    { "url": "adventure/Eamon111.DO", "name": "adventure/Eamon111.DO" },
+    { "url": "adventure/Eamon112.DO", "name": "adventure/Eamon112.DO" },
+    { "url": "adventure/Eamon113.DO", "name": "adventure/Eamon113.DO" },
+    { "url": "adventure/Eamon114.DO", "name": "adventure/Eamon114.DO" },
+    { "url": "adventure/Eamon115.DO", "name": "adventure/Eamon115.DO" },
+    { "url": "adventure/Eamon116.DO", "name": "adventure/Eamon116.DO" },
+    { "url": "adventure/Eamon117a.do", "name": "adventure/Eamon117a.do" },
+    { "url": "adventure/Eamon117b.do", "name": "adventure/Eamon117b.do" },
+    { "url": "adventure/Eamon118.DO", "name": "adventure/Eamon118.DO" },
+    { "url": "adventure/Eamon194.DO", "name": "adventure/Eamon194.DO" },
+    { "url": "adventure/Eamon195.DO", "name": "adventure/Eamon195.DO" },
+    { "url": "adventure/Eamon200.DO", "name": "adventure/Eamon200.DO" },
+    { "url": "adventure/Eamon202.DO", "name": "adventure/Eamon202.DO" },
+    { "url": "adventure/Eamon205.DO", "name": "adventure/Eamon205.DO" },
+    { "url": "adventure/Eamon206.DO", "name": "adventure/Eamon206.DO" },
+    { "url": "adventure/Eamon501.DO", "name": "adventure/Eamon501.DO" },
+    {
+      "url": "adventure/ElysianFields-1.dsk",
+      "name": "adventure/ElysianFields-1"
+    },
+    {
+      "url": "adventure/ElysianFields-2.dsk",
+      "name": "adventure/ElysianFields-2"
+    },
+    { "url": "adventure/Enchanter.dsk", "name": "adventure/Enchanter" },
+    {
+      "url": "adventure/Escape_From_Rungistan.dsk",
+      "name": "adventure/Escape_From_Rungistan"
+    },
+    {
+      "url": "adventure/ExpeditionAmazon1.dsk",
+      "name": "adventure/ExpeditionAmazon1"
+    },
+    {
+      "url": "adventure/ExpeditionAmazon2.dsk",
+      "name": "adventure/ExpeditionAmazon2"
+    },
+    { "url": "adventure/FIGHTCOM.GZ", "name": "adventure/FIGHTCOM.GZ" },
+    {
+      "url": "adventure/FantasticFour-1.dsk",
+      "name": "adventure/FantasticFour-1"
+    },
+    {
+      "url": "adventure/FantasticFour-2.dsk",
+      "name": "adventure/FantasticFour-2"
+    },
+    {
+      "url": "adventure/Fraktured_Faebles-1.dsk",
+      "name": "adventure/Fraktured_Faebles-1"
+    },
+    {
+      "url": "adventure/Fraktured_Faebles-2.dsk",
+      "name": "adventure/Fraktured_Faebles-2"
+    },
+    { "url": "adventure/GALACTU2.GZ", "name": "adventure/GALACTU2.GZ" },
+    { "url": "adventure/GUADALCA.GZ", "name": "adventure/GUADALCA.GZ" },
+    { "url": "adventure/GalGlad.dsk.gz", "name": "adventure/GalGlad.dsk.gz" },
+    {
+      "url": "adventure/GalacticAdventure_1.dsk.gz",
+      "name": "adventure/GalacticAdventure_1.dsk.gz"
+    },
+    {
+      "url": "adventure/GalacticAdventure_2.dsk.gz",
+      "name": "adventure/GalacticAdventure_2.dsk.gz"
+    },
+    {
+      "url": "adventure/GalacticAttack1.dsk.gz",
+      "name": "adventure/GalacticAttack1.dsk.gz"
+    },
+    {
+      "url": "adventure/GalacticAttack2.dsk.gz",
+      "name": "adventure/GalacticAttack2.dsk.gz"
+    },
+    { "url": "adventure/Gemstone.dsk", "name": "adventure/Gemstone" },
+    { "url": "adventure/Gruds1.dsk", "name": "adventure/Gruds1" },
+    { "url": "adventure/Gruds2.dsk", "name": "adventure/Gruds2" },
+    { "url": "adventure/Gunfight.dsk.gz", "name": "adventure/Gunfight.dsk.gz" },
+    { "url": "adventure/Hitchhiker.dsk", "name": "adventure/Hitchhiker" },
+    { "url": "adventure/Infidel.dsk", "name": "adventure/Infidel" },
+    { "url": "adventure/Inmate.do", "name": "adventure/Inmate.do" },
+    { "url": "adventure/Inmate.dsk", "name": "adventure/Inmate" },
+    { "url": "adventure/Institute-1.dsk", "name": "adventure/Institute-1" },
+    { "url": "adventure/Institute-2.dsk", "name": "adventure/Institute-2" },
+    { "url": "adventure/Kadesh-A.dsk", "name": "adventure/Kadesh-A" },
+    { "url": "adventure/Kadesh-B.dsk", "name": "adventure/Kadesh-B" },
+    {
+      "url": "adventure/Lucifers_Realm-1.dsk",
+      "name": "adventure/Lucifers_Realm-1"
+    },
+    {
+      "url": "adventure/Lucifers_Realm-2.dsk",
+      "name": "adventure/Lucifers_Realm-2"
+    },
+    { "url": "adventure/MGARDEN1.GZ", "name": "adventure/MGARDEN1.GZ" },
+    { "url": "adventure/MGARDEN2.GZ", "name": "adventure/MGARDEN2.GZ" },
+    { "url": "adventure/Masksun-A.dsk", "name": "adventure/Masksun-A" },
+    { "url": "adventure/Masksun-B.dsk", "name": "adventure/Masksun-B" },
+    {
+      "url": "adventure/Maxwells_Manor.dsk",
+      "name": "adventure/Maxwells_Manor"
+    },
+    {
+      "url": "adventure/Murder_On_Zinderneuf.dsk",
+      "name": "adventure/Murder_On_Zinderneuf"
+    },
+    {
+      "url": "adventure/Murder_On_Zinderneuf.readme",
+      "name": "adventure/Murder_On_Zinderneuf.readme"
+    },
+    { "url": "adventure/MystHous.do", "name": "adventure/MystHous.do" },
+    { "url": "adventure/Mystery_House.dsk", "name": "adventure/Mystery_House" },
+    {
+      "url": "adventure/Mystery_House.readme",
+      "name": "adventure/Mystery_House.readme"
+    },
+    { "url": "adventure/NAPOLEON.GZ", "name": "adventure/NAPOLEON.GZ" },
+    { "url": "adventure/NORMANDY.GZ", "name": "adventure/NORMANDY.GZ" },
+    { "url": "adventure/Ogre.dsk.gz", "name": "adventure/Ogre.dsk.gz" },
+    { "url": "adventure/PANZER.GZ", "name": "adventure/PANZER.GZ" },
+    { "url": "adventure/PREELECT.GZ", "name": "adventure/PREELECT.GZ" },
+    { "url": "adventure/Phobos.dsk", "name": "adventure/Phobos" },
+    { "url": "adventure/Planetfall.dsk", "name": "adventure/Planetfall" },
+    { "url": "adventure/PrisonerII.dsk", "name": "adventure/PrisonerII" },
+    { "url": "adventure/Quake_1.dsk", "name": "adventure/Quake_1" },
+    { "url": "adventure/Quake_2.dsk", "name": "adventure/Quake_2" },
+    { "url": "adventure/Quest_a.dsk", "name": "adventure/Quest_a" },
+    { "url": "adventure/Quest_b.dsk", "name": "adventure/Quest_b" },
+    { "url": "adventure/REFORGER.GZ", "name": "adventure/REFORGER.GZ" },
+    { "url": "adventure/RINGSIDE.GZ", "name": "adventure/RINGSIDE.GZ" },
+    { "url": "adventure/ROADWAR.GZ", "name": "adventure/ROADWAR.GZ" },
+    { "url": "adventure/Rails.dsk.gz", "name": "adventure/Rails.dsk.gz" },
+    {
+      "url": "adventure/Rendezvous_Rama-1.dsk",
+      "name": "adventure/Rendezvous_Rama-1"
+    },
+    {
+      "url": "adventure/Rendezvous_Rama-2.dsk",
+      "name": "adventure/Rendezvous_Rama-2"
+    },
+    {
+      "url": "adventure/Rendezvous_Rama-3.dsk",
+      "name": "adventure/Rendezvous_Rama-3"
+    },
+    {
+      "url": "adventure/Rendezvous_Rama-4.dsk",
+      "name": "adventure/Rendezvous_Rama-4"
+    },
+    {
+      "url": "adventure/Rendezvous_Rama.readme",
+      "name": "adventure/Rendezvous_Rama.readme"
+    },
+    {
+      "url": "adventure/ReturnOfHeracles.dsk",
+      "name": "adventure/ReturnOfHeracles"
+    },
+    {
+      "url": "adventure/RoadWar2k-1.dsk.gz",
+      "name": "adventure/RoadWar2k-1.dsk.gz"
+    },
+    {
+      "url": "adventure/RoadWar2k-2.dsk.gz",
+      "name": "adventure/RoadWar2k-2.dsk.gz"
+    },
+    { "url": "adventure/SEUIS.GZ", "name": "adventure/SEUIS.GZ" },
+    { "url": "adventure/SHATERED.GZ", "name": "adventure/SHATERED.GZ" },
+    { "url": "adventure/SIXGUN.GZ", "name": "adventure/SIXGUN.GZ" },
+    {
+      "url": "adventure/SSI_Baseball.dsk.gz",
+      "name": "adventure/SSI_Baseball.dsk.gz"
+    },
+    {
+      "url": "adventure/Sargon_III.dsk.gz",
+      "name": "adventure/Sargon_III.dsk.gz"
+    },
+    { "url": "adventure/Scott1.po", "name": "adventure/Scott1.po" },
+    { "url": "adventure/Scott2.do", "name": "adventure/Scott2.do" },
+    { "url": "adventure/Scott_Adams.dsk", "name": "adventure/Scott_Adams" },
+    { "url": "adventure/Seastalker.dsk", "name": "adventure/Seastalker" },
+    { "url": "adventure/SerpentsStar1.dsk", "name": "adventure/SerpentsStar1" },
+    { "url": "adventure/SerpentsStar2.dsk", "name": "adventure/SerpentsStar2" },
+    { "url": "adventure/Sherwood.bin", "name": "adventure/Sherwood.bin" },
+    {
+      "url": "adventure/Sherwood_Forest.dsk",
+      "name": "adventure/Sherwood_Forest"
+    },
+    { "url": "adventure/Softporn.dsk", "name": "adventure/Softporn" },
+    { "url": "adventure/Sorcerer.dsk", "name": "adventure/Sorcerer" },
+    {
+      "url": "adventure/Southern_Command1.nib.gz",
+      "name": "adventure/Southern_Command1.nib.gz"
+    },
+    {
+      "url": "adventure/Southern_Command2.nib.gz",
+      "name": "adventure/Southern_Command2.nib.gz"
+    },
+    {
+      "url": "adventure/StarTrekKobayashiAlt1",
+      "name": "adventure/StarTrekKobayashiAlt1"
+    },
+    {
+      "url": "adventure/StarTrekKobayashiAlt2",
+      "name": "adventure/StarTrekKobayashiAlt2"
+    },
+    { "url": "adventure/Starcross.dsk", "name": "adventure/Starcross" },
+    {
+      "url": "adventure/Strategic_Conquest.asm",
+      "name": "adventure/Strategic_Conquest.asm"
+    },
+    {
+      "url": "adventure/Strategic_Conquest.dsk.gz",
+      "name": "adventure/Strategic_Conquest.dsk.gz"
+    },
+    { "url": "adventure/Sundog_Play.dsk", "name": "adventure/Sundog_Play" },
+    { "url": "adventure/Sundog_Util.dsk", "name": "adventure/Sundog_Util" },
+    { "url": "adventure/Suspended.dsk", "name": "adventure/Suspended" },
+    { "url": "adventure/TIGERS.GZ", "name": "adventure/TIGERS.GZ" },
+    { "url": "adventure/TassTimes-1.dsk", "name": "adventure/TassTimes-1" },
+    { "url": "adventure/TassTimes-2.dsk", "name": "adventure/TassTimes-2" },
+    { "url": "adventure/Text_Adven.dsk", "name": "adventure/Text_Adven" },
+    {
+      "url": "adventure/The_Crimson_Crown1",
+      "name": "adventure/The_Crimson_Crown1"
+    },
+    {
+      "url": "adventure/The_Crimson_Crown2",
+      "name": "adventure/The_Crimson_Crown2"
+    },
+    { "url": "adventure/The_Mist", "name": "adventure/The_Mist" },
+    { "url": "adventure/Threshold.dsk", "name": "adventure/Threshold" },
+    { "url": "adventure/Transylvania.dsk", "name": "adventure/Transylvania" },
+    { "url": "adventure/USAAF_1.GZ", "name": "adventure/USAAF_1.GZ" },
+    { "url": "adventure/USAAF_2.GZ", "name": "adventure/USAAF_2.GZ" },
+    { "url": "adventure/Ulysses1.dsk", "name": "adventure/Ulysses1" },
+    { "url": "adventure/Ulysses2.dsk", "name": "adventure/Ulysses2" },
+    { "url": "adventure/WCROWN_1.GZ", "name": "adventure/WCROWN_1.GZ" },
+    { "url": "adventure/WCROWN_2.GZ", "name": "adventure/WCROWN_2.GZ" },
+    { "url": "adventure/WILDER1", "name": "adventure/WILDER1" },
+    { "url": "adventure/WILDER2", "name": "adventure/WILDER2" },
+    { "url": "adventure/Wishbringer.dsk", "name": "adventure/Wishbringer" },
+    { "url": "adventure/Witness.dsk", "name": "adventure/Witness" },
+    {
+      "url": "adventure/Wizard_Princess.dsk",
+      "name": "adventure/Wizard_Princess"
+    },
+    { "url": "adventure/Xsylvania.dsk", "name": "adventure/Xsylvania" },
+    { "url": "adventure/Zork1.bin", "name": "adventure/Zork1.bin" },
+    { "url": "adventure/Zork_1.dsk", "name": "adventure/Zork_1" },
+    { "url": "adventure/Zork_2.dsk", "name": "adventure/Zork_2" },
+    { "url": "adventure/Zork_3.dsk", "name": "adventure/Zork_3" },
+    {
+      "url": "adventure/alice_in_wonderland.asm",
+      "name": "adventure/alice_in_wonderland.asm"
+    },
+    {
+      "url": "adventure/alice_in_wonderland_1.dsk",
+      "name": "adventure/alice_in_wonderland_1"
+    },
+    {
+      "url": "adventure/alice_in_wonderland_2.dsk",
+      "name": "adventure/alice_in_wonderland_2"
+    },
+    {
+      "url": "adventure/alpine_encounter.asm",
+      "name": "adventure/alpine_encounter.asm"
+    },
+    {
+      "url": "adventure/alpine_encounter_1.dsk",
+      "name": "adventure/alpine_encounter_1"
+    },
+    {
+      "url": "adventure/alpine_encounter_2.dsk",
+      "name": "adventure/alpine_encounter_2"
+    },
+    { "url": "adventure/amazon1.nib", "name": "adventure/amazon1.nib" },
+    { "url": "adventure/amazon2.nib", "name": "adventure/amazon2.nib" },
+    { "url": "adventure/amazon3.nib", "name": "adventure/amazon3.nib" },
+    { "url": "adventure/amazon4.nib", "name": "adventure/amazon4.nib" },
+    { "url": "adventure/ballyhoo.dsk", "name": "adventure/ballyhoo" },
+    { "url": "adventure/battech.zip", "name": "adventure/battech.zip" },
+    { "url": "adventure/borrowed1.dsk", "name": "adventure/borrowed1" },
+    { "url": "adventure/borrowed2.dsk", "name": "adventure/borrowed2" },
+    {
+      "url": "adventure/caverns_of_freitag.dsk",
+      "name": "adventure/caverns_of_freitag"
+    },
+    { "url": "adventure/caw1.dsk.gz", "name": "adventure/caw1.dsk.gz" },
+    { "url": "adventure/caw2.dsk.gz", "name": "adventure/caw2.dsk.gz" },
+    { "url": "adventure/cosbal.gz", "name": "adventure/cosbal.gz" },
+    { "url": "adventure/coveted_mirror1", "name": "adventure/coveted_mirror1" },
+    { "url": "adventure/coveted_mirror2", "name": "adventure/coveted_mirror2" },
+    {
+      "url": "adventure/critical_mass.asm",
+      "name": "adventure/critical_mass.asm"
+    },
+    {
+      "url": "adventure/critical_mass_1.dsk",
+      "name": "adventure/critical_mass_1"
+    },
+    {
+      "url": "adventure/critical_mass_2.dsk",
+      "name": "adventure/critical_mass_2"
+    },
+    { "url": "adventure/cut_throats.dsk", "name": "adventure/cut_throats" },
+    {
+      "url": "adventure/dark_crystal.asm",
+      "name": "adventure/dark_crystal.asm"
+    },
+    {
+      "url": "adventure/dark_crystal_1a.dsk",
+      "name": "adventure/dark_crystal_1a"
+    },
+    {
+      "url": "adventure/dark_crystal_1b.nib",
+      "name": "adventure/dark_crystal_1b.nib"
+    },
+    {
+      "url": "adventure/dark_crystal_2a.nib",
+      "name": "adventure/dark_crystal_2a.nib"
+    },
+    {
+      "url": "adventure/dark_crystal_2b.nib",
+      "name": "adventure/dark_crystal_2b.nib"
+    },
+    {
+      "url": "adventure/dark_crystal_save.nib",
+      "name": "adventure/dark_crystal_save.nib"
+    },
+    {
+      "url": "adventure/death_caribbean_1.dsk",
+      "name": "adventure/death_caribbean_1"
+    },
+    {
+      "url": "adventure/death_caribbean_2.dsk",
+      "name": "adventure/death_caribbean_2"
+    },
+    { "url": "adventure/dragonworld_1.dsk", "name": "adventure/dragonworld_1" },
+    { "url": "adventure/dragonworld_2.dsk", "name": "adventure/dragonworld_2" },
+    { "url": "adventure/dragonworld_3.dsk", "name": "adventure/dragonworld_3" },
+    { "url": "adventure/dragonworld_4.dsk", "name": "adventure/dragonworld_4" },
+    { "url": "adventure/dragonworld_5.dsk", "name": "adventure/dragonworld_5" },
+    { "url": "adventure/eamon-004.dsk", "name": "adventure/eamon-004" },
+    { "url": "adventure/eamon-005.dsk", "name": "adventure/eamon-005" },
+    { "url": "adventure/eamon-006.dsk", "name": "adventure/eamon-006" },
+    { "url": "adventure/eamon-007.dsk", "name": "adventure/eamon-007" },
+    { "url": "adventure/eamon-008.dsk", "name": "adventure/eamon-008" },
+    { "url": "adventure/eamon-009.dsk", "name": "adventure/eamon-009" },
+    { "url": "adventure/eamon-011.dsk", "name": "adventure/eamon-011" },
+    { "url": "adventure/eamon-012.dsk", "name": "adventure/eamon-012" },
+    { "url": "adventure/eamon-013.dsk", "name": "adventure/eamon-013" },
+    { "url": "adventure/eamon-014.dsk", "name": "adventure/eamon-014" },
+    { "url": "adventure/eamon-015.dsk", "name": "adventure/eamon-015" },
+    { "url": "adventure/eamon-016.dsk", "name": "adventure/eamon-016" },
+    { "url": "adventure/eamon-017.dsk", "name": "adventure/eamon-017" },
+    { "url": "adventure/eamon-018.dsk", "name": "adventure/eamon-018" },
+    { "url": "adventure/eamon-019.dsk", "name": "adventure/eamon-019" },
+    { "url": "adventure/eamon-020.dsk", "name": "adventure/eamon-020" },
+    { "url": "adventure/eamon-021.dsk", "name": "adventure/eamon-021" },
+    { "url": "adventure/eamon-022.dsk", "name": "adventure/eamon-022" },
+    { "url": "adventure/eamon-023.dsk", "name": "adventure/eamon-023" },
+    { "url": "adventure/eamon-024.dsk", "name": "adventure/eamon-024" },
+    { "url": "adventure/eamon-025.dsk", "name": "adventure/eamon-025" },
+    { "url": "adventure/eamon-026.dsk", "name": "adventure/eamon-026" },
+    { "url": "adventure/eamon-027.dsk", "name": "adventure/eamon-027" },
+    { "url": "adventure/eamon-028.dsk", "name": "adventure/eamon-028" },
+    { "url": "adventure/eamon-029.dsk", "name": "adventure/eamon-029" },
+    { "url": "adventure/eamon-030.dsk", "name": "adventure/eamon-030" },
+    { "url": "adventure/eamon-031.dsk", "name": "adventure/eamon-031" },
+    { "url": "adventure/eamon-033.dsk", "name": "adventure/eamon-033" },
+    { "url": "adventure/eamon-034.dsk", "name": "adventure/eamon-034" },
+    { "url": "adventure/eamon-035.dsk", "name": "adventure/eamon-035" },
+    { "url": "adventure/eamon-036.dsk", "name": "adventure/eamon-036" },
+    { "url": "adventure/eamon-038.dsk", "name": "adventure/eamon-038" },
+    { "url": "adventure/eamon-039.dsk", "name": "adventure/eamon-039" },
+    { "url": "adventure/eamon-040.dsk", "name": "adventure/eamon-040" },
+    { "url": "adventure/eamon-041.dsk", "name": "adventure/eamon-041" },
+    { "url": "adventure/eamon-042.dsk", "name": "adventure/eamon-042" },
+    { "url": "adventure/eamon-043.dsk", "name": "adventure/eamon-043" },
+    { "url": "adventure/eamon-044.dsk", "name": "adventure/eamon-044" },
+    { "url": "adventure/eamon-045.dsk", "name": "adventure/eamon-045" },
+    { "url": "adventure/eamon-046.dsk", "name": "adventure/eamon-046" },
+    { "url": "adventure/eamon-047.dsk", "name": "adventure/eamon-047" },
+    { "url": "adventure/eamon-048.dsk", "name": "adventure/eamon-048" },
+    { "url": "adventure/eamon-049.dsk", "name": "adventure/eamon-049" },
+    { "url": "adventure/eamon-050.dsk", "name": "adventure/eamon-050" },
+    { "url": "adventure/eamon-051.dsk", "name": "adventure/eamon-051" },
+    { "url": "adventure/eamon-052.dsk", "name": "adventure/eamon-052" },
+    { "url": "adventure/eamon-053.dsk", "name": "adventure/eamon-053" },
+    { "url": "adventure/eamon-054.dsk", "name": "adventure/eamon-054" },
+    { "url": "adventure/eamon-055.dsk", "name": "adventure/eamon-055" },
+    { "url": "adventure/eamon-056.dsk", "name": "adventure/eamon-056" },
+    { "url": "adventure/eamon-057.dsk", "name": "adventure/eamon-057" },
+    { "url": "adventure/eamon-058.dsk", "name": "adventure/eamon-058" },
+    { "url": "adventure/eamon-059.dsk", "name": "adventure/eamon-059" },
+    { "url": "adventure/eamon-060.dsk", "name": "adventure/eamon-060" },
+    { "url": "adventure/eamon-061.dsk", "name": "adventure/eamon-061" },
+    { "url": "adventure/eamon-062.dsk", "name": "adventure/eamon-062" },
+    { "url": "adventure/eamon-063.dsk", "name": "adventure/eamon-063" },
+    { "url": "adventure/eamon-064.dsk", "name": "adventure/eamon-064" },
+    { "url": "adventure/eamon-065.dsk", "name": "adventure/eamon-065" },
+    { "url": "adventure/eamon-066.dsk", "name": "adventure/eamon-066" },
+    { "url": "adventure/eamon-067.dsk", "name": "adventure/eamon-067" },
+    { "url": "adventure/eamon-068.dsk", "name": "adventure/eamon-068" },
+    { "url": "adventure/eamon-069.dsk", "name": "adventure/eamon-069" },
+    { "url": "adventure/eamon-070.dsk", "name": "adventure/eamon-070" },
+    { "url": "adventure/eamon-071.dsk", "name": "adventure/eamon-071" },
+    { "url": "adventure/eamon-072.dsk", "name": "adventure/eamon-072" },
+    { "url": "adventure/eamon-073.dsk", "name": "adventure/eamon-073" },
+    { "url": "adventure/eamon-074.dsk", "name": "adventure/eamon-074" },
+    { "url": "adventure/eamon-075.dsk", "name": "adventure/eamon-075" },
+    { "url": "adventure/eamon-076.dsk", "name": "adventure/eamon-076" },
+    { "url": "adventure/eamon-077.dsk", "name": "adventure/eamon-077" },
+    { "url": "adventure/eamon-078.dsk", "name": "adventure/eamon-078" },
+    { "url": "adventure/eamon-079.dsk", "name": "adventure/eamon-079" },
+    { "url": "adventure/eamon-080.dsk", "name": "adventure/eamon-080" },
+    { "url": "adventure/eamon-081.dsk", "name": "adventure/eamon-081" },
+    { "url": "adventure/eamon-082.dsk", "name": "adventure/eamon-082" },
+    { "url": "adventure/eamon-083.dsk", "name": "adventure/eamon-083" },
+    { "url": "adventure/eamon-084.dsk", "name": "adventure/eamon-084" },
+    { "url": "adventure/eamon-085.dsk", "name": "adventure/eamon-085" },
+    { "url": "adventure/eamon-086.dsk", "name": "adventure/eamon-086" },
+    { "url": "adventure/eamon-087.dsk", "name": "adventure/eamon-087" },
+    { "url": "adventure/eamon-088.dsk", "name": "adventure/eamon-088" },
+    { "url": "adventure/eamon-089.dsk", "name": "adventure/eamon-089" },
+    { "url": "adventure/eamon-090.dsk", "name": "adventure/eamon-090" },
+    { "url": "adventure/eamon-091.dsk", "name": "adventure/eamon-091" },
+    { "url": "adventure/eamon-092.dsk", "name": "adventure/eamon-092" },
+    { "url": "adventure/eamon-093.dsk", "name": "adventure/eamon-093" },
+    { "url": "adventure/eamon-094.dsk", "name": "adventure/eamon-094" },
+    { "url": "adventure/eamon-095.dsk", "name": "adventure/eamon-095" },
+    { "url": "adventure/eamon-096.dsk", "name": "adventure/eamon-096" },
+    { "url": "adventure/eamon-097.dsk", "name": "adventure/eamon-097" },
+    { "url": "adventure/eamon-098.dsk", "name": "adventure/eamon-098" },
+    { "url": "adventure/eamon-099.dsk", "name": "adventure/eamon-099" },
+    { "url": "adventure/eamon-101.dsk", "name": "adventure/eamon-101" },
+    { "url": "adventure/eamon-102.dsk", "name": "adventure/eamon-102" },
+    { "url": "adventure/eamon-103.dsk", "name": "adventure/eamon-103" },
+    { "url": "adventure/eamon-104.dsk", "name": "adventure/eamon-104" },
+    { "url": "adventure/eamon-105.dsk", "name": "adventure/eamon-105" },
+    { "url": "adventure/eamon-106.dsk", "name": "adventure/eamon-106" },
+    { "url": "adventure/eamon-107.dsk", "name": "adventure/eamon-107" },
+    { "url": "adventure/eamon-108.dsk", "name": "adventure/eamon-108" },
+    { "url": "adventure/eamon-110.dsk", "name": "adventure/eamon-110" },
+    { "url": "adventure/eamon-111.dsk", "name": "adventure/eamon-111" },
+    { "url": "adventure/eamon-112.dsk", "name": "adventure/eamon-112" },
+    { "url": "adventure/eamon-113.dsk", "name": "adventure/eamon-113" },
+    { "url": "adventure/eamon-114.dsk", "name": "adventure/eamon-114" },
+    { "url": "adventure/eamon-115.dsk", "name": "adventure/eamon-115" },
+    { "url": "adventure/eamon-116.dsk", "name": "adventure/eamon-116" },
+    { "url": "adventure/eamon-117a.dsk", "name": "adventure/eamon-117a" },
+    { "url": "adventure/eamon-117b.dsk", "name": "adventure/eamon-117b" },
+    { "url": "adventure/eamon-118.dsk", "name": "adventure/eamon-118" },
+    { "url": "adventure/eamon-194.dsk", "name": "adventure/eamon-194" },
+    { "url": "adventure/eamon-195.dsk", "name": "adventure/eamon-195" },
+    { "url": "adventure/eamon-200.dsk", "name": "adventure/eamon-200" },
+    { "url": "adventure/eamon-202.dsk", "name": "adventure/eamon-202" },
+    { "url": "adventure/eamon-205.dsk", "name": "adventure/eamon-205" },
+    { "url": "adventure/eamon-206.dsk", "name": "adventure/eamon-206" },
+    {
+      "url": "adventure/eamon-utilities.tar",
+      "name": "adventure/eamon-utilities.tar"
+    },
+    {
+      "url": "adventure/gemstone_healer.asm",
+      "name": "adventure/gemstone_healer.asm"
+    },
+    {
+      "url": "adventure/gemstone_healer_1.dsk",
+      "name": "adventure/gemstone_healer_1"
+    },
+    {
+      "url": "adventure/gemstone_healer_2.dsk",
+      "name": "adventure/gemstone_healer_2"
+    },
+    { "url": "adventure/hobbit.asm", "name": "adventure/hobbit.asm" },
+    { "url": "adventure/hobbit_1.dsk", "name": "adventure/hobbit_1" },
+    { "url": "adventure/hobbit_2.dsk", "name": "adventure/hobbit_2" },
+    { "url": "adventure/labyrinth.asm", "name": "adventure/labyrinth.asm" },
+    { "url": "adventure/labyrinth_1.dsk", "name": "adventure/labyrinth_1" },
+    { "url": "adventure/labyrinth_2.dsk", "name": "adventure/labyrinth_2" },
+    {
+      "url": "adventure/lurking_horror.dsk",
+      "name": "adventure/lurking_horror"
+    },
+    { "url": "adventure/perry_mason_1.dsk", "name": "adventure/perry_mason_1" },
+    { "url": "adventure/perry_mason_2.dsk", "name": "adventure/perry_mason_2" },
+    { "url": "adventure/perry_mason_3.dsk", "name": "adventure/perry_mason_3" },
+    { "url": "adventure/perry_mason_4.dsk", "name": "adventure/perry_mason_4" },
+    { "url": "adventure/portal-1.dsk", "name": "adventure/portal-1" },
+    { "url": "adventure/portal-2.dsk.gz", "name": "adventure/portal-2.dsk.gz" },
+    { "url": "adventure/portal-3.dsk.gz", "name": "adventure/portal-3.dsk.gz" },
+    { "url": "adventure/portal-4.dsk.gz", "name": "adventure/portal-4.dsk.gz" },
+    { "url": "adventure/portal-5.dsk.gz", "name": "adventure/portal-5.dsk.gz" },
+    { "url": "adventure/portal-6.dsk.gz", "name": "adventure/portal-6.dsk.gz" },
+    { "url": "adventure/prisoner.dsk.gz", "name": "adventure/prisoner.dsk.gz" },
+    {
+      "url": "adventure/project_spacestation_1.dsk.gz",
+      "name": "adventure/project_spacestation_1.dsk.gz"
+    },
+    {
+      "url": "adventure/project_spacestation_2.dsk.gz",
+      "name": "adventure/project_spacestation_2.dsk.gz"
+    },
+    { "url": "adventure/risk.asm", "name": "adventure/risk.asm" },
+    { "url": "adventure/risk1.nib.gz", "name": "adventure/risk1.nib.gz" },
+    { "url": "adventure/risk2.nib.gz", "name": "adventure/risk2.nib.gz" },
+    { "url": "adventure/robotwar.dsk.gz", "name": "adventure/robotwar.dsk.gz" },
+    { "url": "adventure/sundog_u.gz", "name": "adventure/sundog_u.gz" },
+    {
+      "url": "adventure/treasure_island_1.dsk.gz",
+      "name": "adventure/treasure_island_1.dsk.gz"
+    },
+    {
+      "url": "adventure/treasure_island_2.dsk.gz",
+      "name": "adventure/treasure_island_2.dsk.gz"
+    },
+    {
+      "url": "adventure/treasure_island_3.dsk.gz",
+      "name": "adventure/treasure_island_3.dsk.gz"
+    },
+    { "url": "adventure/tzone1a.nib.gz", "name": "adventure/tzone1a.nib.gz" },
+    { "url": "adventure/tzone1b.nib.gz", "name": "adventure/tzone1b.nib.gz" },
+    { "url": "adventure/tzone2c.nib.gz", "name": "adventure/tzone2c.nib.gz" },
+    { "url": "adventure/tzone2d.nib.gz", "name": "adventure/tzone2d.nib.gz" },
+    { "url": "adventure/tzone3e.nib.gz", "name": "adventure/tzone3e.nib.gz" },
+    { "url": "adventure/tzone3f.nib.gz", "name": "adventure/tzone3f.nib.gz" },
+    { "url": "adventure/tzone4g.nib.gz", "name": "adventure/tzone4g.nib.gz" },
+    { "url": "adventure/tzone4h.nib.gz", "name": "adventure/tzone4h.nib.gz" },
+    { "url": "adventure/tzone5i.nib.gz", "name": "adventure/tzone5i.nib.gz" },
+    { "url": "adventure/tzone5j.nib.gz", "name": "adventure/tzone5j.nib.gz" },
+    { "url": "adventure/tzone6k.nib.gz", "name": "adventure/tzone6k.nib.gz" },
+    { "url": "adventure/tzone6l.nib.gz", "name": "adventure/tzone6l.nib.gz" },
+    {
+      "url": "adventure/universe_1.dsk.gz",
+      "name": "adventure/universe_1.dsk.gz"
+    },
+    {
+      "url": "adventure/universe_2.dsk.gz",
+      "name": "adventure/universe_2.dsk.gz"
+    },
+    {
+      "url": "adventure/universe_3.dsk.gz",
+      "name": "adventure/universe_3.dsk.gz"
+    },
+    {
+      "url": "adventure/universe_4.dsk.gz",
+      "name": "adventure/universe_4.dsk.gz"
+    },
+    { "url": "adventure/voodoo.gz", "name": "adventure/voodoo.gz" },
+    { "url": "aliens_a.dsk", "name": "aliens_a" },
+    { "url": "aliens_b.dsk", "name": "aliens_b" },
+    { "url": "aplcidsp", "name": "aplcidsp" },
+    { "url": "argos.dsk", "name": "argos" },
+    { "url": "best_of_bill_budge", "name": "best_of_bill_budge" },
+    { "url": "bubble_bobble_1.dsk", "name": "bubble_bobble_1" },
+    { "url": "bubble_bobble_2.dsk", "name": "bubble_bobble_2" },
+    { "url": "cap1_dsk", "name": "cap1_dsk" },
+    { "url": "cap2_dsk", "name": "cap2_dsk" },
+    { "url": "castle_smurfenstien.dsk", "name": "castle_smurfenstien" },
+    { "url": "cavern_creatures.dsk", "name": "cavern_creatures" },
+    { "url": "commando.dsk", "name": "commando" },
+    { "url": "cross_city.dsk", "name": "cross_city" },
+    { "url": "dead/Dungeon.nib.gz", "name": "dead/Dungeon.nib.gz" },
+    {
+      "url": "dead/ElysianFields-1.dsk.gz",
+      "name": "dead/ElysianFields-1.dsk.gz"
+    },
+    {
+      "url": "dead/ElysianFields-2.dsk.gz",
+      "name": "dead/ElysianFields-2.dsk.gz"
+    },
+    {
+      "url": "dead/Escape_From_Rungistan.dsk.gz",
+      "name": "dead/Escape_From_Rungistan.dsk.gz"
+    },
+    {
+      "url": "dead/ExpeditionAmazon1.dsk.gz",
+      "name": "dead/ExpeditionAmazon1.dsk.gz"
+    },
+    {
+      "url": "dead/ExpeditionAmazon2.dsk.gz",
+      "name": "dead/ExpeditionAmazon2.dsk.gz"
+    },
+    {
+      "url": "dead/FantasticFour-1.dsk.gz",
+      "name": "dead/FantasticFour-1.dsk.gz"
+    },
+    {
+      "url": "dead/FantasticFour-2.dsk.gz",
+      "name": "dead/FantasticFour-2.dsk.gz"
+    },
+    {
+      "url": "dead/Fraktured_Faebles-1.dsk.gz",
+      "name": "dead/Fraktured_Faebles-1.dsk.gz"
+    },
+    {
+      "url": "dead/Fraktured_Faebles-2.dsk.gz",
+      "name": "dead/Fraktured_Faebles-2.dsk.gz"
+    },
+    { "url": "dead/Gemstone.dsk.gz", "name": "dead/Gemstone.dsk.gz" },
+    { "url": "dead/Gruds1.dsk.gz", "name": "dead/Gruds1.dsk.gz" },
+    { "url": "dead/Gruds2.dsk.gz", "name": "dead/Gruds2.dsk.gz" },
+    { "url": "dead/Inmate.do.gz", "name": "dead/Inmate.do.gz" },
+    { "url": "dead/Inmate.dsk.gz", "name": "dead/Inmate.dsk.gz" },
+    { "url": "dead/Institute-1.dsk.gz", "name": "dead/Institute-1.dsk.gz" },
+    { "url": "dead/Institute-2.dsk.gz", "name": "dead/Institute-2.dsk.gz" },
+    { "url": "dino_smurf.dsk", "name": "dino_smurf" },
+    { "url": "gauntlet_1.dsk", "name": "gauntlet_1" },
+    { "url": "gauntlet_2.dsk", "name": "gauntlet_2" },
+    { "url": "goodnight.codes", "name": "goodnight.codes" },
+    { "url": "heavy_barrel_1.dsk", "name": "heavy_barrel_1" },
+    { "url": "heavy_barrel_2.dsk", "name": "heavy_barrel_2" },
+    { "url": "j-bird.dsk", "name": "j-bird" },
+    { "url": "lost_tomb_etc.dsk", "name": "lost_tomb_etc" },
+    { "url": "mating_zone_etc.dsk", "name": "mating_zone_etc" },
+    {
+      "url": "midnightmagic_rcflightsim2_pestpatrol.dsk",
+      "name": "midnightmagic_rcflightsim2_pestpatrol"
+    },
+    { "url": "montezuma_etc.dsk", "name": "montezuma_etc" },
+    { "url": "qix.dsk", "name": "qix" },
+    { "url": "rampage.dsk", "name": "rampage" },
+    { "url": "situation_critical.dsk", "name": "situation_critical" },
+    { "url": "spy_vs_spy2.dsk", "name": "spy_vs_spy2" },
+    {
+      "url": "suicide_fireandice_geneticdrift_roadpizza_lasersilk.dsk",
+      "name": "suicide_fireandice_geneticdrift_roadpizza_lasersilk"
+    },
+    { "url": "super_zaxxon.dsk", "name": "super_zaxxon" },
+    { "url": "tapper.dsk", "name": "tapper" },
+    { "url": "thexder1.dsk", "name": "thexder1" },
+    { "url": "thexder2.dsk", "name": "thexder2" },
+    { "url": "wayout.dsk", "name": "wayout" }
+  ]
+}

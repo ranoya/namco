@@ -1,33 +1,57 @@
+<!-- 
 
+https://porkrind.org/a2/disk/index.json
+original site: https://porkrind.org/a2/
+https://porkrind.org/a2/disk/index.json
+
+-->
 <html>
   <head>
 <title>Apple ][+</title>
-<script type="text/javascript" src="./6502.js"></script>
-<script type="text/javascript" src="./6502-test.js"></script>
-<script type="text/javascript" src="./apple2.js"></script>
-<script type="text/javascript" src="./apple2-disk-controller.js"></script>
-<script type="text/javascript" src="./apple2-language-card.js"></script>
-<script type="text/javascript" src="./apple2+.disk.rom.js"></script>
-<script type="text/javascript" src="./apple2+.rom.js"></script>
-<script type="text/javascript" src="./apple2+.charset.js"></script>
-<script type="text/javascript" src="./apple2-video-canvas.js"></script>
-<script type="text/javascript" src="./sylvester-0.1.3/sylvester.src.js"></script>
-<script type="text/javascript" src="./glUtils.js"></script>
-<script type="text/javascript" src="./apple2-video-webgl.js"></script>
-<script type="text/javascript" src="./apple2-speaker-audiocontext.js"></script>
-<script type="text/javascript" src="./dos3.3.dsk.js"></script>
-<script type="text/javascript" src="./socket.io/socket.io.js"></script>
-<script type="text/javascript" src="./apple2-websocket-client.js"></script>
-<link rel="stylesheet" href="./style.css" media="screen" />
-</head>
-<body>
-<h1>Apple ][+</h1>
+<script type="text/javascript" src="a2/6502.js"></script>
+<script type="text/javascript" src="a2/6502-test.js"></script>
+<script type="text/javascript" src="a2/apple2.js"></script>
+<script type="text/javascript" src="a2/apple2-disk-controller.js"></script>
+<script type="text/javascript" src="a2/apple2-language-card.js"></script>
+<script type="text/javascript" src="a2/apple2+.disk.rom.js"></script>
+<script type="text/javascript" src="a2/apple2+.rom.js"></script>
+<script type="text/javascript" src="a2/apple2+.charset.js"></script>
+<script type="text/javascript" src="a2/apple2-video-canvas.js"></script>
+<script type="text/javascript" src="a2/sylvester-0.1.3/sylvester.src.js"></script>
+<script type="text/javascript" src="a2/glUtils.js"></script>
+<script type="text/javascript" src="a2/apple2-video-webgl.js"></script>
+<script type="text/javascript" src="a2/apple2-speaker-audiocontext.js"></script>
+<script type="text/javascript" src="a2/dos3.3.dsk.js"></script>
+<script type="text/javascript" src="a2/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="a2/apple2-websocket-client.js"></script>
+<link rel="stylesheet" href="a2/style.css" media="screen" />
 
-<div id="monitor">
+<script>
+    $_GET = [];
+    (function(){
+        corte = window.location.href.toString().indexOf('?');
+        if (corte > 0) {
+            argumento = window.location.href.toString().substring(corte + 1);
+            argumentos = argumento.split('&');
+            for (arg in argumentos){
+                let argCorte = argumentos[arg].indexOf('=');
+                $_GET[argumentos[arg].substring(0,argCorte)] = argumentos[arg].substring(argCorte + 1);
+            }
+        } 
+    })();
+</script>
+</head>
+<body style="overflow: hidden;">
+
+
+<div id="monitor" style="overflow: hidden;">
+
 <div id="glare"></div>
 <!-- <canvas id="screen" style="width:280px;height:192px;"></canvas> -->
-<canvas id="glscreen" style="width:840px;height:576px;"></canvas>
-<canvas id="screen" style="width:840px;height:576px;"></canvas>
+<canvas id="glscreen" style="display: none; width:840px;height:576px;"></canvas>
+<div style="position: fixed; z-index: 9; top: 0; left: 0; width: 100%; height: 100dvh; background-color: black;"></div>
+<canvas id="screen" style="position: fixed; z-index: 10; top: 20px; left: 20px; width: calc(100% - 40px); "></canvas>
+
 <div style="display:inline-block;">
   <div id="cpu_speed"></div>
   <div id="video_speed"></div>
@@ -62,9 +86,9 @@ Disk:
             div.appendChild(new_stuff);
     }
     a2 = new apple2();
-    var joy_mode = doc.id("joystick");
+
     plat.register_key_events(document, function(event) {
-        if (joy_mode.checked) {
+            if (typeof $_GET['joy'] != 'undefined' && $_GET['joy'] != null && $_GET['joy'] != '') {
             var keydown = event.type == "keydown";
             var scale = event.shiftKey ? .5 : 1;
             switch (event.key.replace(/^S-/,"")) {
@@ -72,8 +96,8 @@ Disk:
                 case "down":  case "k": case "s": a2.joystick({Y: +keydown * scale}); return false;
                 case "left":  case "j": case "a": a2.joystick({X: -keydown * scale}); return false;
                 case "right": case "l": case "d": a2.joystick({X: +keydown * scale}); return false;
-                case "z":               case ",": a2.joystick({B1: keydown * scale}); return false;
-                case "x":               case ".": a2.joystick({B2: keydown * scale}); return false;
+                case "x":               case ",": a2.joystick({B1: keydown * scale}); return false;
+                case "z":               case ".": a2.joystick({B2: keydown * scale}); return false;
             };
         }
         if (event.type == "keydown")
@@ -82,7 +106,8 @@ Disk:
 
     var webgl_screen_driver = apple2_video_webgl(doc.id("glscreen"));
     var canvas_screen_driver = new apple2_video_canvas(doc.id("screen"));
-    a2.set_screen_driver(webgl_screen_driver || canvas_screen_driver);
+    // a2.set_screen_driver(webgl_screen_driver || canvas_screen_driver);
+    a2.set_screen_driver(canvas_screen_driver);
     a2.set_speaker_driver(new apple2_speaker_audiocontext(a2));
     a2.slot[0] = new apple2_language_card(a2);
     a2.slot[6] = new apple2_disk_controller_card(a2);
@@ -130,6 +155,7 @@ Disk:
     };
     start();
 
+    /*
     doc.id("trace").onclick = function() {
         a2.set_trace(true);
     }
@@ -159,6 +185,7 @@ Disk:
     doc.id("stats").onclick = function() {
         print(a2.stats());
     }
+    */
     function load_disk(url, callback) {
         loadBinary(url, function(disk, error, status) {
             if (error) { printf("status: %s, error: %s\n", status, error); return; }
@@ -195,6 +222,7 @@ Disk:
             });
         }
     });
+    /*
     doc.id("webgl").onchange = function(event) {
         a2.set_screen_driver(this.checked ? webgl_screen_driver : canvas_screen_driver);
         // render a new frame so the screen doesn't flash with whatever the last rendered frame was on the new driver
@@ -206,23 +234,10 @@ Disk:
         doc.id("webgl").checked = true;
         doc.id("webgl").onchange.call(doc.id("webgl"));
     } else
-        doc.id("webgl").disabled = true;
+        doc.id("webgl").disabled = true;*/
 }
+        
 </script>
 
-<script type="text/javascript">
-  var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.porkrind.org/" : "http://analytics.porkrind.org/");
-  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-  </script><script type="text/javascript">
-  try {
-  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-  piwikTracker.trackPageView();
-  piwikTracker.enableLinkTracking();
-  } catch( err ) {}
-</script><noscript><p><img src="http://analytics.porkrind.org/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
-
-<address>
-<a href="mailto:david@porkrind.org">David Caldwell</a>
-</address>
 </body>
 </html>

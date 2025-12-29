@@ -1,0 +1,256 @@
+<!-- 
+
+https://porkrind.org/a2/disk/index.json
+original site: https://porkrind.org/a2/
+https://porkrind.org/a2/disk/index.json
+
+-->
+<html>
+  <head>
+<title>Apple ][+</title>
+<script type="text/javascript" src="../a2/6502.js"></script>
+<script type="text/javascript" src="../a2/6502-test.js"></script>
+<script type="text/javascript" src="../a2/apple2.js"></script>
+<script type="text/javascript" src="../a2/apple2-disk-controller.js"></script>
+<script type="text/javascript" src="../a2/apple2-language-card.js"></script>
+<script type="text/javascript" src="../a2/apple2+.disk.rom.js"></script>
+<script type="text/javascript" src="../a2/apple2+.rom.js"></script>
+<script type="text/javascript" src="../a2/apple2+.charset.js"></script>
+<script type="text/javascript" src="../a2/apple2-video-canvas.js"></script>
+<script type="text/javascript" src="../a2/sylvester-0.1.3/sylvester.src.js"></script>
+<script type="text/javascript" src="../a2/glUtils.js"></script>
+<script type="text/javascript" src="../a2/apple2-video-webgl.js"></script>
+<script type="text/javascript" src="../a2/apple2-speaker-audiocontext.js"></script>
+<script type="text/javascript" src="../a2/dos3.3.dsk.js"></script>
+<script type="text/javascript" src="../a2/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="../a2/apple2-websocket-client.js"></script>
+<link rel="stylesheet" href="../a2/style.css" media="screen" />
+
+<script>
+    $_GET = [];
+    (function(){
+        corte = window.location.href.toString().indexOf('?');
+        if (corte > 0) {
+            argumento = window.location.href.toString().substring(corte + 1);
+            argumentos = argumento.split('&');
+            for (arg in argumentos){
+                let argCorte = argumentos[arg].indexOf('=');
+                $_GET[argumentos[arg].substring(0,argCorte)] = argumentos[arg].substring(argCorte + 1);
+            }
+        } 
+    })();
+</script>
+</head>
+<body style="overflow: hidden;">
+
+
+<div id="monitor" style="overflow: hidden;">
+
+<div id="glare"></div>
+<!-- <canvas id="screen" style="width:280px;height:192px;"></canvas> -->
+<canvas id="glscreen" style="display: none; width:840px;height:576px;"></canvas>
+<div style="position: fixed; z-index: 9; top: 0; left: 0; width: 100%; height: 100dvh; background-color: black;"></div>
+<canvas id="screen" style="position: fixed; z-index: 10; top: 20px; left: 20px; width: calc(100% - 40px); "></canvas>
+
+<div style="display:inline-block;">
+  <div id="cpu_speed"></div>
+  <div id="video_speed"></div>
+  <div id="overall_speed"></div>
+</div>
+</div>
+
+<br>
+<input id="trace" type="button" value="Trace 1 Frame"></input>
+<input id="trace-ret" type="button" value="Send 'Return' and Trace 1 Frame"></input>
+<input id="trace-off" type="button" value="Continue and stop tracing"></input>
+<input id="cpu-test" type="button" value="Run 6502 Regression Test"></input>
+<input id="stats" type="button" value="Instruction Stats"></input>
+<input id="pause" type="button" value="Pause"></input>
+<input id="reset" type="button" value="Reset"></input>
+<input id="coldstart" type="button" value="Cold Start"></input>
+<br>
+<input id="joystick" type="checkbox">Joystick Mode</input>
+<input id="webgl" type="checkbox">Use WebGL</input>
+<br>
+Disk:
+<select id="disk"></select><a id="disk_link" href="#">🔗</a>
+<pre><div id="debug"></div></pre>
+
+<script type="text/javascript" src="../a2/platform.js"></script>
+<script type="text/javascript">
+{
+    function replace_contents(div, new_stuff) {
+        while(div.firstChild)
+            div.removeChild(div.firstChild);
+        if (new_stuff)
+            div.appendChild(new_stuff);
+    }
+    a2 = new apple2();
+
+    plat.register_key_events(document, function(event) {
+            if (typeof $_GET['joy'] != 'undefined' && $_GET['joy'] != null && $_GET['joy'] != '') {
+            var keydown = event.type == "keydown";
+            var scale = event.shiftKey ? .5 : 1;
+            switch (event.key.replace(/^S-/,"")) {
+                case "up":    case "i": case "w": a2.joystick({Y: -keydown * scale}); return false;
+                case "down":  case "k": case "s": a2.joystick({Y: +keydown * scale}); return false;
+                case "left":  case "j": case "a": a2.joystick({X: -keydown * scale}); return false;
+                case "right": case "l": case "d": a2.joystick({X: +keydown * scale}); return false;
+                case "x":               case ",": a2.joystick({B1: keydown * scale}); return false;
+                case "z":               case ".": a2.joystick({B2: keydown * scale}); return false;
+            };
+        }
+        if (event.type == "keydown")
+            return a2.keypress(event.key);
+    }, "keydown", "keyup");
+
+    var webgl_screen_driver = apple2_video_webgl(doc.id("glscreen"));
+    var canvas_screen_driver = new apple2_video_canvas(doc.id("screen"));
+    // a2.set_screen_driver(webgl_screen_driver || canvas_screen_driver);
+    a2.set_screen_driver(canvas_screen_driver);
+    a2.set_speaker_driver(new apple2_speaker_audiocontext(a2));
+    a2.slot[0] = new apple2_language_card(a2);
+    a2.slot[6] = new apple2_disk_controller_card(a2);
+    a2.slot[6].insert_disk(dos_3_3_disk_image);
+    var timeslice = 1/60;
+    var overall_time = new a2.averager(1/timeslice);
+    var fps_update_interval = 1/15;
+    var time_to_fps_update = 0;
+    var verify_6502_trace = true;
+    var run = function() {
+        overall_time.start();
+        var t = a2.run(timeslice);
+        overall_time.end(timeslice);
+        if (t != undefined) {
+            if (verify_6502_trace)
+                verify_trace(t);
+            else {
+                replace_contents(doc.id("debug"));
+                print(t);
+                stop();
+            }
+        }
+
+        time_to_fps_update -= timeslice;
+        if (time_to_fps_update <= 0) {
+            var cpu_time = a2.cpu_run_time.totals();
+            replace_contents(doc.id("cpu_speed"), doc.text(sprintf("1 sec of CPU took %.2f sec", cpu_time.total/cpu_time.per)));
+            var vid_time = a2.video_render_time.totals();
+            replace_contents(doc.id("video_speed"), doc.text(sprintf("Frame render time: %.2f sec (%.2f FPS unthrottled)", vid_time.total/vid_time.per, vid_time.per/vid_time.total)));
+            var tot_time = overall_time.totals();
+            replace_contents(doc.id("overall_speed"), doc.text(sprintf("Total time: %.2f sec (%.2fx unthrottled)", tot_time.total/tot_time.per, tot_time.per/tot_time.total)));
+            time_to_fps_update += fps_update_interval;
+        }
+    }
+    var runner;
+    function start() {
+        if (!runner)
+            runner = setInterval(run, timeslice*1000);
+    }
+    function stop() {
+        if (runner) {
+            clearInterval(runner);
+            runner = undefined;
+        }
+    };
+    start();
+
+    /*
+    doc.id("trace").onclick = function() {
+        a2.set_trace(true);
+    }
+    doc.id("trace-ret").onclick = function() {
+        a2.keypress("return");
+        a2.set_trace(true);
+    }
+    doc.id("trace-off").onclick = function() {
+        replace_contents(doc.id("debug"));
+        a2.set_trace(false);
+        start();
+    }
+    doc.id("pause").onclick = function() {
+        if (runner) stop();
+        else        start();
+    }
+    doc.id("reset").onclick = function() {
+        a2.reset();
+    }
+    doc.id("coldstart").onclick = function() {
+        a2.power_on_reset();
+    }
+    doc.id("cpu-test").onclick = function() {
+        stop();
+        test_6502();
+    }
+    doc.id("stats").onclick = function() {
+        print(a2.stats());
+    }
+    */
+    function load_disk(url, callback) {
+        loadBinary(url, function(disk, error, status) {
+            if (error) { printf("status: %s, error: %s\n", status, error); return; }
+            a2.slot[6].insert_disk(disk);
+            if (callback)
+                callback();
+        });
+    }
+    loadJSON("disk/index.json", function(disks, error, status) {
+        if (error) { printf("Error: %s\n", error); return }
+        disks = disks.disks;
+        var _default = disks.shift();
+        disks.sort(function(a,b) {
+            var al = a.name.split('/').length, bl = b.name.split('/').length;
+            return al - bl != 0 ? al - bl :
+                a.name.toLowerCase() < b.name.toLowerCase() ? -1 : // Where's cmp when you need it??
+                a.name.toLowerCase() > b.name.toLowerCase() ? +1 : 0 });
+        disks.unshift(_default);
+        var div = doc.id("disk");
+        for (var d=0; d<disks.length; d++) {
+            div.appendChild(disks[d].option = doc(["option", { value: "disk/"+disks[d].url, selected:d==0 }, disks[d].name ]));
+            if (URL.param.disk && disks[d].name == URL.param.disk) { // Hackily insert a specified disk if it was given as a URL parameter.
+                printf("Loading %s...\n", URL.param.disk);
+                disks[d].option.selected = true;
+                disks[0].option.selected = false;
+                load_disk(disks[d].option.value, function() { a2.power_on_reset() });
+            }
+        }
+        doc.id("disk").onchange = function(event) {
+            var e = new plat.event(event);
+            load_disk(e.target.value, function() {
+                printf("Disk %s Inserted.\n", e.target.value);
+                doc.id("disk_link").href = "?disk="+escape(disks[e.target.selectedIndex].name);
+            });
+        }
+    });
+    /*
+    doc.id("webgl").onchange = function(event) {
+        a2.set_screen_driver(this.checked ? webgl_screen_driver : canvas_screen_driver);
+        // render a new frame so the screen doesn't flash with whatever the last rendered frame was on the new driver
+        a2.run(1/a2.frames__second);
+        doc.id("screen"  ).style.display = this.checked ? "none"  : "inline";
+        doc.id("glscreen").style.display = this.checked ? "inline" : "none";
+    }
+    if (webgl_screen_driver) {
+        doc.id("webgl").checked = true;
+        doc.id("webgl").onchange.call(doc.id("webgl"));
+    } else
+        doc.id("webgl").disabled = true;*/
+}
+        
+</script>
+
+<style>
+    #screen {
+    position: fixed !important;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
+    width: revert !important;
+    height: calc(100dvh - 40px) !important;
+    margin-left: calc(50vw - ((4 * 100dvh) / 6)) !important;
+
+    }
+</style>
+
+</body>
+</html>

@@ -45,7 +45,7 @@
 		<div id="estyjs">
 			<canvas id = "EstyJsOutput" width="640" height="400" >
 			</canvas>
-			<div id = "buttonpanel">
+			<div id = "buttonpanel" style="display: none">
                 <small><button id="btnFullscreen" onclick="fullScreen();">Expand</button></small>
                 <small><button id="btnLocked" onclick="lockMouse();">Lock</button></small>
                 <small><button onclick="reset()" id="btnReset">Reset</button></small>
@@ -145,6 +145,7 @@
 
         <script>
             lockMouse();
+            soundToggle();
         </script>
 		
 	</body>

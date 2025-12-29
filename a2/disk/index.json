@@ -1,6 +1,7 @@
 {
   "status": "ok",
   "disks": [
+    { "url": "Visicalc.dsk", "name": "Visicalc" },
     { "url": "DOS33SystemMaster1983.dsk", "name": "DOS 3.3 Master" },
     { "url": "Loderunner.dsk", "name": "Lode Runner" },
     { "url": "Apple_LOGO.dsk", "name": "Logo" },

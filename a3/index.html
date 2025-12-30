@@ -1,0 +1,301 @@
+<html><head>
+
+<title>Apple ][js - An Apple 2 Emulator in JavaScript</title>
+
+<meta name="viewport" content="width=640, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Apple ][js">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta charset="utf-8">
+<meta name="description" content="Apple ][js is an Apple ][ emulator written using only JavaScript and HTML5. It has color display, sound and disk support. It works best in the Chrome and Safari browsers.">
+<meta name="keywords" content="apple2,apple,ii,javascript,emulator,html5">
+
+<link rel="apple-touch-icon" href="img/webapp-iphone.png">
+<link rel="apple-touch-icon" size="72x72" href="img/webapp-ipad.png">
+<link rel="shortcut icon" href="img/logoicon.png">
+<link rel="stylesheet" type="text/css" href="css/apple2.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
+
+<!-- Disk Index -->
+<script type="text/javascript" src="json/disks/index.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q8WTBNSTEW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q8WTBNSTEW');
+</script>
+</head>
+<body class="apple2" ondragover="Apple2.handleDragOver(0, event)" ondrop="Apple2.handleDrop(0, event)" ondragend="Apple2.handleDragEnd(0, event)">
+  <div class="outer">
+    <div id="exit-fullscreen">
+      <button onclick="Apple2.exitFullScreen();">Exit Full Page</button>
+    </div>
+    <div id="header">
+      <a href="https://github.com/whscullin/apple2js#readme" target="_blank">
+        <img src="img/badge.png" id="badge">
+      </a>
+      <div id="subtitle">An Apple ][ Emulator in JavaScript</div>
+    </div>
+    <div id="display">
+      <div class="overscan">
+        <canvas id="screen" width="592" height="416" tabindex="-1"></canvas>
+      </div>
+    </div>
+    <div class="inset">
+      <div class="disk" ondragover="Apple2.handleDragOver(1, event)" ondrop="Apple2.handleDrop(1, event)" ondragend="Apple2.handleDragEnd(1, event)">
+        <div class="disk-light" id="disk1" style="background-image: url(&quot;css/red-on-16.png&quot;);"></div>
+        <button title="Load Disk" onclick="Apple2.openLoad(1, event);">
+          <i class="fas fa-folder-open"></i>
+        </button>
+        <button title="Save Disk" onclick="Apple2.openSave(1, event);">
+          <i class="fas fa-save"></i>
+        </button>
+        <div id="disk-label1" class="disk-label">Disk 1</div>
+      </div>
+      <div class="disk" ondragover="Apple2.handleDragOver(2, event)" ondrop="Apple2.handleDrop(2, event)" ondragend="Apple2.handleDragEnd(2, event)">
+        <div class="disk-light" id="disk2"></div>
+        <button title="Load Disk" onclick="Apple2.openLoad(2, event);">
+          <i class="fas fa-folder-open"></i>
+        </button>
+        <button title="Save Disk" onclick="Apple2.openSave(2, event);">
+          <i class="fas fa-save"></i>
+        </button>
+        <div id="disk-label2" class="disk-label">Disk 2</div>
+      </div>
+    </div>
+    <div class="inset">
+      <div id="khz" onclick="Apple2.toggleShowFPS()">1035 kHz</div>
+      <button id="pause-run" onclick="Apple2.pauseRun()" title="Pause/Run">
+        <i class="fas fa-pause"></i>
+      </button>
+      <button id="toggle-sound" onclick="Apple2.toggleSound()" title="Toggle Sound">
+        <i class="fas fa-volume-up"></i>
+      </button>
+      <button id="toggle-printer" onclick="Apple2.openPrinterModal()" title="Toggle Printer">
+        <i class="fas fa-print"></i>
+      </button>
+      <div class="spacer short"></div>
+      <button onclick="Apple2.copy()" title="Copy">
+        <i class="fas fa-copy"></i>
+      </button>
+      <button onclick="Apple2.paste()" title="Paste">
+        <i class="fas fa-paste"></i>
+      </button>
+      <div class="spacer"></div>
+      <button onclick="window.open('https://github.com/whscullin/apple2js#readme', 'blank')" title="About">
+        <i class="fas fa-info"></i>
+      </button>
+      <button onclick="Apple2.openOptions()" title="Options (F4)">
+        <i class="fas fa-cog"></i>
+      </button>
+    </div>
+    <div class="inset">
+      <div style="margin: 0 10px">
+        <div id="keyboard" class="layout-apple2"><div class="row row0"><div class="key key-1 key-!" data-key1="1" data-key2="!"><div><span>!</span><br><span>1</span></div></div><div class="key key-2 key-&quot;" data-key1="2" data-key2="&quot;"><div><span>"</span><br><span>2</span></div></div><div class="key key-3 key-#" data-key1="3" data-key2="#"><div><span>#</span><br><span>3</span></div></div><div class="key key-4 key-$" data-key1="4" data-key2="$"><div><span>$</span><br><span>4</span></div></div><div class="key key-5 key-%" data-key1="5" data-key2="%"><div><span>%</span><br><span>5</span></div></div><div class="key key-6 key-" data-key1="6" data-key2="&amp;"><div><span>&amp;</span><br><span>6</span></div></div><div class="key key-7 key-'" data-key1="7" data-key2="'"><div><span>'</span><br><span>7</span></div></div><div class="key key-8 key-(" data-key1="8" data-key2="("><div><span>(</span><br><span>8</span></div></div><div class="key key-9 key-)" data-key1="9" data-key2=")"><div><span>)</span><br><span>9</span></div></div><div class="key key-0" data-key1="0" data-key2="0"><div><span>0</span></div></div><div class="key key-: key-*" data-key1=":" data-key2="*"><div><span>*</span><br><span>:</span></div></div><div class="key key-- key-=" data-key1="-" data-key2="="><div><span>=</span><br><span>-</span></div></div><div class="key key-RESET v-center" data-key1="RESET" data-key2="RESET"><div><span class="small">RESET</span></div></div></div><div class="row row1"><div class="key key-ESC v-center" data-key1="ESC" data-key2="ESC"><div><span class="small">ESC</span></div></div><div class="key key-Q" data-key1="Q" data-key2="Q"><div><span>Q</span></div></div><div class="key key-W" data-key1="W" data-key2="W"><div><span>W</span></div></div><div class="key key-E" data-key1="E" data-key2="E"><div><span>E</span></div></div><div class="key key-R" data-key1="R" data-key2="R"><div><span>R</span></div></div><div class="key key-T" data-key1="T" data-key2="T"><div><span>T</span></div></div><div class="key key-Y" data-key1="Y" data-key2="Y"><div><span>Y</span></div></div><div class="key key-U" data-key1="U" data-key2="U"><div><span>U</span></div></div><div class="key key-I" data-key1="I" data-key2="I"><div><span>I</span></div></div><div class="key key-O" data-key1="O" data-key2="O"><div><span>O</span></div></div><div class="key key-P key-@" data-key1="P" data-key2="@"><div><span>@</span><br><span>P</span></div></div><div class="key key-REPT v-center" data-key1="REPT" data-key2="REPT"><div><span class="small">REPT</span></div></div><div class="key key-RETURN v-center" data-key1="RETURN" data-key2="RETURN"><div><span class="small">RETURN</span></div></div></div><div class="row row2"><div class="key key-CTRL v-center" data-key1="CTRL" data-key2="CTRL"><div><span class="small">CTRL</span></div></div><div class="key key-A" data-key1="A" data-key2="A"><div><span>A</span></div></div><div class="key key-S" data-key1="S" data-key2="S"><div><span>S</span></div></div><div class="key key-D" data-key1="D" data-key2="D"><div><span>D</span></div></div><div class="key key-F" data-key1="F" data-key2="F"><div><span>F</span></div></div><div class="key key-G key-BELL" data-key1="G" data-key2="BELL"><div><span class="small">BELL</span><br><span>G</span></div></div><div class="key key-H" data-key1="H" data-key2="H"><div><span>H</span></div></div><div class="key key-J" data-key1="J" data-key2="J"><div><span>J</span></div></div><div class="key key-K" data-key1="K" data-key2="K"><div><span>K</span></div></div><div class="key key-L" data-key1="L" data-key2="L"><div><span>L</span></div></div><div class="key key- key-+" data-key1=";" data-key2="+"><div><span>+</span><br><span>;</span></div></div><div class="key key-larr v-center" data-key1="&amp;larr;" data-key2="&amp;larr;"><div><span>←</span></div></div><div class="key key-rarr v-center" data-key1="&amp;rarr;" data-key2="&amp;rarr;"><div><span>→</span></div></div></div><div class="row row3"><div class="key key-SHIFT v-center" data-key1="SHIFT" data-key2="SHIFT"><div><span class="small">SHIFT</span></div></div><div class="key key-Z" data-key1="Z" data-key2="Z"><div><span>Z</span></div></div><div class="key key-X" data-key1="X" data-key2="X"><div><span>X</span></div></div><div class="key key-C" data-key1="C" data-key2="C"><div><span>C</span></div></div><div class="key key-V" data-key1="V" data-key2="V"><div><span>V</span></div></div><div class="key key-B" data-key1="B" data-key2="B"><div><span>B</span></div></div><div class="key key-N key-^" data-key1="N" data-key2="^"><div><span>^</span><br><span>N</span></div></div><div class="key key-M key-]" data-key1="M" data-key2="]"><div><span>]</span><br><span>M</span></div></div><div class="key key-, key-&lt;" data-key1="," data-key2="&lt;"><div><span>&lt;</span><br><span>,</span></div></div><div class="key key-. key-&gt;" data-key1="." data-key2="&gt;"><div><span>&gt;</span><br><span>.</span></div></div><div class="key key-/ key-?" data-key1="/" data-key2="?"><div><span>?</span><br><span>/</span></div></div><div class="key key-SHIFT v-center" data-key1="SHIFT" data-key2="SHIFT"><div><span class="small">SHIFT</span></div></div></div><div class="row row4"><div class="key key-POWER v-center" data-key1="POWER" data-key2="POWER"><div><span class="small">POWER</span></div></div><div class="key key-nbsp v-center" data-key1="&amp;nbsp;" data-key2="&amp;nbsp;"><div><span>&nbsp;</span></div></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="loading-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Loading">
+        <header class="modal__header">
+          <div class="modal__title" id="loading-modal-title">
+            Loading...
+          </div>
+        </header>
+        <main class="modal__content" id="loading-modal-content">
+          <div class="meter">
+            <div class="progress"></div>
+          </div>
+        </main></div>
+      </div>
+    </div>
+  
+
+  <div class="modal" id="options-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Options">
+        <header class="modal__header">
+          <span class="modal__title" id="options-modal-title">
+            Options
+          </span>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          </button>
+        </header>
+        <main class="modal__content" id="options-modal-content">
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="save-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Save Disk">
+        <header class="modal__header">
+          <span class="modal__title" id="save-modal-title">
+            Save Disk
+          </span>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          </button>
+        </header>
+        <main class="modal__content" id="save-modal-content">
+          <form action="#" onsubmit="return false;">
+            <h3>Save to Browser</h3>
+            Save Name: <input type="text" name="name" id="save_name">
+            <button class="modal__btn" onclick="Apple2.doSave()" aria-label="Save disk locally">Save</button>
+          </form>
+          <hr>
+          <div>
+            <h3>Download to Local Disk</h3>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <a id="local_save_link" class="button">Download</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="manage-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Load Disk">
+        <header class="modal__header">
+          <span class="modal__title" id="manage-modal-title">
+            Manage Local Saves
+          </span>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          </button>
+        </header>
+        <main class="modal__content" id="manage-modal-content"></main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">OK</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="http-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Load Disk">
+        <header class="modal__header">
+          <span class="modal__title" id="http-modal-title">
+            Load URL
+          </span>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          </button>
+        </header>
+        <main class="modal__content" id="http-modal-content">
+          <form action="#">
+            <input type="text" id="http_url">
+          </form>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close="" aria-label="Load this URL">OK</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="load-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Load Disk">
+        <header class="modal__header">
+          <span class="modal__title" id="load-modal-title">
+            Load Disk
+          </span>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          </button>
+        </header>
+        <main class="modal__content" id="load-modal-content">
+          <table>
+            <tbody><tr>
+              <td>
+                <select id="category_select" multiple="multiple" onchange="Apple2.selectCategory(event)">
+                <option value="13 Sector">13 Sector</option><option value="Blank">Blank</option><option value="Demo">Demo</option><option value="Diagnostics">Diagnostics</option><option value="Educational">Educational</option><option value="Game">Game</option><option value="Graphics">Graphics</option><option value="Interactive Fiction">Interactive Fiction</option><option value="Music Video">Music Video</option><option value="Personal">Personal</option><option value="Productivity">Productivity</option><option value="Programming">Programming</option><option value="System">System</option><option value="Utility">Utility</option><option>Local Saves</option></select>
+              </td>
+              <td>
+                <select id="disk_select" multiple="multiple" onchange="Apple2.selectDisk(event)" ondblclick="Apple2.clickDisk(event)">
+                </select>
+              </td>
+            </tr>
+          </tbody></table>
+          <form action="#">
+            <input type="file" id="local_file">
+            <div id="local_file_address_input" style="display: none">
+              $
+              <input id="local_file_address">
+            </div>
+          </form>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">Cancel</button>
+          <button class="modal__btn" onclick="Apple2.doLoad(event)" aria-label="Open the selected disk">Open</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="printer-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Printer">
+        <header class="modal__header">
+          <span class="modal__title" id="printer-modal-title">
+              Printer
+          </span>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          </button>
+        </header>
+        <main class="modal__content" id="printer-modal-content">
+          <div class="paper" tabindex="-1"><div class="line"></div></div>
+        </main>
+        <footer class="modal__footer">
+          <a id="raw_printer_output" class="button">Download Raw Output</a>
+          <button class="modal__btn" onclick="Apple2.clearPrinterPaper()" aria-label="Clear the paper">Clear</button>
+          <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="alert-modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Alert">
+        <header class="modal__header">
+          <span class="modal__title" id="alert-modal-title">
+              Alert
+          </span>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          </button>
+        </header>
+        <main class="modal__content" id="alert-modal-content">
+          <div class="message">
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="green">
+      <feColorMatrix type="matrix" values="0.0 0.0 0.0 0.0 0
+                0.0 1.0 0.0 0.0 0
+                0.0 0.0 0.5 0.0 0
+                0.0 0.0 0.0 1.0 0"></feColorMatrix>
+      </filter>
+  </svg>
+
+  <script src="dist/main2.bundle.js"></script>
+
+
+</body></html>

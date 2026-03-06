@@ -76,7 +76,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const url = urlParams.get("rom");
       const conteudo = document.getElementById("conteudo");
-      conteudo.src = "https://archive.org/embed/" + rom;
+      conteudo.src = "https://archive.org/embed/" + url;
 
       setTimeout(function () {
         document.getElementById("conteudo").style.width = "100% !important";

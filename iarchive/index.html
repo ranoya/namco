@@ -55,7 +55,6 @@
 
       iframe {
         aspect-ratio: 560/384;
-        width: 100%;
       }
     </style>
   </head>
@@ -65,6 +64,7 @@
       <iframe
         id="conteudo"
         frameborder="0"
+        width="560"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
         allowfullscreen
@@ -76,6 +76,10 @@
       const url = urlParams.get("rom");
       const conteudo = document.getElementById("conteudo");
       conteudo.src = "https://archive.org/embed/" + rom;
+
+      setTimeout(function () {
+        document.getElementById("conteudo").style.width = "100% !important";
+      }, 10000);
     </script>
   </body>
 </html>
